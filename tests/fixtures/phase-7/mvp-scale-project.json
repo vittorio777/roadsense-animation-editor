@@ -1,0 +1,4088 @@
+{
+  "schemaVersion": 1,
+  "animationId": "phase-7-mvp-scale",
+  "scene": {
+    "width": 1600,
+    "height": 900,
+    "background": {
+      "assetId": "intersection-01"
+    },
+    "objects": [
+      {
+        "id": "scale-vehicle-1",
+        "type": "vehicle",
+        "assetId": "car-blue-sedan",
+        "movement": {
+          "points": [
+            {
+              "id": "scale-vehicle-1-point-1",
+              "time": 0,
+              "x": 120,
+              "y": 126
+            },
+            {
+              "id": "scale-vehicle-1-point-2",
+              "time": 3.157895,
+              "x": 188,
+              "y": 162
+            },
+            {
+              "id": "scale-vehicle-1-point-3",
+              "time": 6.315789,
+              "x": 256,
+              "y": 188
+            },
+            {
+              "id": "scale-vehicle-1-point-4",
+              "time": 9.473684,
+              "x": 324,
+              "y": 154
+            },
+            {
+              "id": "scale-vehicle-1-point-5",
+              "time": 12.631579,
+              "x": 392,
+              "y": 118
+            },
+            {
+              "id": "scale-vehicle-1-point-6",
+              "time": 15.789474,
+              "x": 460,
+              "y": 142
+            },
+            {
+              "id": "scale-vehicle-1-point-7",
+              "time": 18.947368,
+              "x": 528,
+              "y": 180
+            },
+            {
+              "id": "scale-vehicle-1-point-8",
+              "time": 22.105263,
+              "x": 596,
+              "y": 168
+            },
+            {
+              "id": "scale-vehicle-1-point-9",
+              "time": 25.263158,
+              "x": 664,
+              "y": 132
+            },
+            {
+              "id": "scale-vehicle-1-point-10",
+              "time": 28.421053,
+              "x": 732,
+              "y": 112
+            },
+            {
+              "id": "scale-vehicle-1-point-11",
+              "time": 31.578947,
+              "x": 800,
+              "y": 148
+            },
+            {
+              "id": "scale-vehicle-1-point-12",
+              "time": 34.736842,
+              "x": 868,
+              "y": 184
+            },
+            {
+              "id": "scale-vehicle-1-point-13",
+              "time": 37.894737,
+              "x": 936,
+              "y": 172
+            },
+            {
+              "id": "scale-vehicle-1-point-14",
+              "time": 41.052632,
+              "x": 1004,
+              "y": 124
+            },
+            {
+              "id": "scale-vehicle-1-point-15",
+              "time": 44.210526,
+              "x": 1072,
+              "y": 140
+            },
+            {
+              "id": "scale-vehicle-1-point-16",
+              "time": 47.368421,
+              "x": 1140,
+              "y": 178
+            },
+            {
+              "id": "scale-vehicle-1-point-17",
+              "time": 50.526316,
+              "x": 1208,
+              "y": 158
+            },
+            {
+              "id": "scale-vehicle-1-point-18",
+              "time": 53.684211,
+              "x": 1276,
+              "y": 116
+            },
+            {
+              "id": "scale-vehicle-1-point-19",
+              "time": 56.842105,
+              "x": 1344,
+              "y": 134
+            },
+            {
+              "id": "scale-vehicle-1-point-20",
+              "time": 60,
+              "x": 1412,
+              "y": 170
+            }
+          ],
+          "paths": [
+            {
+              "id": "scale-vehicle-1-path-1",
+              "fromPointId": "scale-vehicle-1-point-1",
+              "toPointId": "scale-vehicle-1-point-2",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 142.666667,
+                "y": 138
+              },
+              "control2": {
+                "x": 165.333333,
+                "y": 150
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-2",
+              "fromPointId": "scale-vehicle-1-point-2",
+              "toPointId": "scale-vehicle-1-point-3",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 210.666667,
+                "y": 170.666667
+              },
+              "control2": {
+                "x": 233.333333,
+                "y": 179.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-3",
+              "fromPointId": "scale-vehicle-1-point-3",
+              "toPointId": "scale-vehicle-1-point-4",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 278.666667,
+                "y": 176.666667
+              },
+              "control2": {
+                "x": 301.333333,
+                "y": 165.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-4",
+              "fromPointId": "scale-vehicle-1-point-4",
+              "toPointId": "scale-vehicle-1-point-5",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 346.666667,
+                "y": 142
+              },
+              "control2": {
+                "x": 369.333333,
+                "y": 130
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-5",
+              "fromPointId": "scale-vehicle-1-point-5",
+              "toPointId": "scale-vehicle-1-point-6",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 414.666667,
+                "y": 126
+              },
+              "control2": {
+                "x": 437.333333,
+                "y": 134
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-6",
+              "fromPointId": "scale-vehicle-1-point-6",
+              "toPointId": "scale-vehicle-1-point-7",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 482.666667,
+                "y": 154.666667
+              },
+              "control2": {
+                "x": 505.333333,
+                "y": 167.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-7",
+              "fromPointId": "scale-vehicle-1-point-7",
+              "toPointId": "scale-vehicle-1-point-8",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 550.666667,
+                "y": 176
+              },
+              "control2": {
+                "x": 573.333333,
+                "y": 172
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-8",
+              "fromPointId": "scale-vehicle-1-point-8",
+              "toPointId": "scale-vehicle-1-point-9",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 618.666667,
+                "y": 156
+              },
+              "control2": {
+                "x": 641.333333,
+                "y": 144
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-9",
+              "fromPointId": "scale-vehicle-1-point-9",
+              "toPointId": "scale-vehicle-1-point-10",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 686.666667,
+                "y": 125.333333
+              },
+              "control2": {
+                "x": 709.333333,
+                "y": 118.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-10",
+              "fromPointId": "scale-vehicle-1-point-10",
+              "toPointId": "scale-vehicle-1-point-11",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 754.666667,
+                "y": 124
+              },
+              "control2": {
+                "x": 777.333333,
+                "y": 136
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-11",
+              "fromPointId": "scale-vehicle-1-point-11",
+              "toPointId": "scale-vehicle-1-point-12",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 822.666667,
+                "y": 160
+              },
+              "control2": {
+                "x": 845.333333,
+                "y": 172
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-12",
+              "fromPointId": "scale-vehicle-1-point-12",
+              "toPointId": "scale-vehicle-1-point-13",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 890.666667,
+                "y": 180
+              },
+              "control2": {
+                "x": 913.333333,
+                "y": 176
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-13",
+              "fromPointId": "scale-vehicle-1-point-13",
+              "toPointId": "scale-vehicle-1-point-14",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 958.666667,
+                "y": 156
+              },
+              "control2": {
+                "x": 981.333333,
+                "y": 140
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-14",
+              "fromPointId": "scale-vehicle-1-point-14",
+              "toPointId": "scale-vehicle-1-point-15",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1026.666667,
+                "y": 129.333333
+              },
+              "control2": {
+                "x": 1049.333333,
+                "y": 134.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-15",
+              "fromPointId": "scale-vehicle-1-point-15",
+              "toPointId": "scale-vehicle-1-point-16",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1094.666667,
+                "y": 152.666667
+              },
+              "control2": {
+                "x": 1117.333333,
+                "y": 165.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-16",
+              "fromPointId": "scale-vehicle-1-point-16",
+              "toPointId": "scale-vehicle-1-point-17",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1162.666667,
+                "y": 171.333333
+              },
+              "control2": {
+                "x": 1185.333333,
+                "y": 164.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-17",
+              "fromPointId": "scale-vehicle-1-point-17",
+              "toPointId": "scale-vehicle-1-point-18",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1230.666667,
+                "y": 144
+              },
+              "control2": {
+                "x": 1253.333333,
+                "y": 130
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-18",
+              "fromPointId": "scale-vehicle-1-point-18",
+              "toPointId": "scale-vehicle-1-point-19",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1298.666667,
+                "y": 122
+              },
+              "control2": {
+                "x": 1321.333333,
+                "y": 128
+              }
+            },
+            {
+              "id": "scale-vehicle-1-path-19",
+              "fromPointId": "scale-vehicle-1-point-19",
+              "toPointId": "scale-vehicle-1-point-20",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1366.666667,
+                "y": 146
+              },
+              "control2": {
+                "x": 1389.333333,
+                "y": 158
+              }
+            }
+          ]
+        },
+        "stateTracks": {
+          "indicator": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-1-indicator-1",
+                "time": 0,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-2",
+                "time": 3.157895,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-3",
+                "time": 6.315789,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-4",
+                "time": 9.473684,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-5",
+                "time": 12.631579,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-6",
+                "time": 15.789474,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-7",
+                "time": 18.947368,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-8",
+                "time": 22.105263,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-9",
+                "time": 25.263158,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-10",
+                "time": 28.421053,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-11",
+                "time": 31.578947,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-12",
+                "time": 34.736842,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-13",
+                "time": 37.894737,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-14",
+                "time": 41.052632,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-15",
+                "time": 44.210526,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-16",
+                "time": 47.368421,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-17",
+                "time": 50.526316,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-18",
+                "time": 53.684211,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-19",
+                "time": 56.842105,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-1-indicator-20",
+                "time": 60,
+                "value": "left"
+              }
+            ]
+          },
+          "brakeLight": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-1-brake-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-brake-2",
+                "time": 3.157895,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-brake-3",
+                "time": 6.315789,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-brake-4",
+                "time": 9.473684,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-brake-5",
+                "time": 12.631579,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-brake-6",
+                "time": 15.789474,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-brake-7",
+                "time": 18.947368,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-brake-8",
+                "time": 22.105263,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-brake-9",
+                "time": 25.263158,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-brake-10",
+                "time": 28.421053,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-brake-11",
+                "time": 31.578947,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-brake-12",
+                "time": 34.736842,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-brake-13",
+                "time": 37.894737,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-brake-14",
+                "time": 41.052632,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-brake-15",
+                "time": 44.210526,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-brake-16",
+                "time": 47.368421,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-brake-17",
+                "time": 50.526316,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-brake-18",
+                "time": 53.684211,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-brake-19",
+                "time": 56.842105,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-brake-20",
+                "time": 60,
+                "value": false
+              }
+            ]
+          },
+          "headlight": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-1-headlight-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-headlight-2",
+                "time": 3.157895,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-headlight-3",
+                "time": 6.315789,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-headlight-4",
+                "time": 9.473684,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-headlight-5",
+                "time": 12.631579,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-headlight-6",
+                "time": 15.789474,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-headlight-7",
+                "time": 18.947368,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-headlight-8",
+                "time": 22.105263,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-headlight-9",
+                "time": 25.263158,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-headlight-10",
+                "time": 28.421053,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-headlight-11",
+                "time": 31.578947,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-headlight-12",
+                "time": 34.736842,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-headlight-13",
+                "time": 37.894737,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-headlight-14",
+                "time": 41.052632,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-headlight-15",
+                "time": 44.210526,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-headlight-16",
+                "time": 47.368421,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-headlight-17",
+                "time": 50.526316,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-headlight-18",
+                "time": 53.684211,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-headlight-19",
+                "time": 56.842105,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-headlight-20",
+                "time": 60,
+                "value": true
+              }
+            ]
+          },
+          "horn": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-1-horn-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-horn-2",
+                "time": 3.157895,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-horn-3",
+                "time": 6.315789,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-horn-4",
+                "time": 9.473684,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-horn-5",
+                "time": 12.631579,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-horn-6",
+                "time": 15.789474,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-horn-7",
+                "time": 18.947368,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-horn-8",
+                "time": 22.105263,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-horn-9",
+                "time": 25.263158,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-horn-10",
+                "time": 28.421053,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-horn-11",
+                "time": 31.578947,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-horn-12",
+                "time": 34.736842,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-horn-13",
+                "time": 37.894737,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-horn-14",
+                "time": 41.052632,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-horn-15",
+                "time": 44.210526,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-horn-16",
+                "time": 47.368421,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-horn-17",
+                "time": 50.526316,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-horn-18",
+                "time": 53.684211,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-1-horn-19",
+                "time": 56.842105,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-1-horn-20",
+                "time": 60,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "scale-vehicle-2",
+        "type": "vehicle",
+        "assetId": "car-blue-sport",
+        "movement": {
+          "points": [
+            {
+              "id": "scale-vehicle-2-point-1",
+              "time": 0,
+              "x": 1480,
+              "y": 271
+            },
+            {
+              "id": "scale-vehicle-2-point-2",
+              "time": 3.157895,
+              "x": 1412,
+              "y": 307
+            },
+            {
+              "id": "scale-vehicle-2-point-3",
+              "time": 6.315789,
+              "x": 1344,
+              "y": 333
+            },
+            {
+              "id": "scale-vehicle-2-point-4",
+              "time": 9.473684,
+              "x": 1276,
+              "y": 299
+            },
+            {
+              "id": "scale-vehicle-2-point-5",
+              "time": 12.631579,
+              "x": 1208,
+              "y": 263
+            },
+            {
+              "id": "scale-vehicle-2-point-6",
+              "time": 15.789474,
+              "x": 1140,
+              "y": 287
+            },
+            {
+              "id": "scale-vehicle-2-point-7",
+              "time": 18.947368,
+              "x": 1072,
+              "y": 325
+            },
+            {
+              "id": "scale-vehicle-2-point-8",
+              "time": 22.105263,
+              "x": 1004,
+              "y": 313
+            },
+            {
+              "id": "scale-vehicle-2-point-9",
+              "time": 25.263158,
+              "x": 936,
+              "y": 277
+            },
+            {
+              "id": "scale-vehicle-2-point-10",
+              "time": 28.421053,
+              "x": 868,
+              "y": 257
+            },
+            {
+              "id": "scale-vehicle-2-point-11",
+              "time": 31.578947,
+              "x": 800,
+              "y": 293
+            },
+            {
+              "id": "scale-vehicle-2-point-12",
+              "time": 34.736842,
+              "x": 732,
+              "y": 329
+            },
+            {
+              "id": "scale-vehicle-2-point-13",
+              "time": 37.894737,
+              "x": 664,
+              "y": 317
+            },
+            {
+              "id": "scale-vehicle-2-point-14",
+              "time": 41.052632,
+              "x": 596,
+              "y": 269
+            },
+            {
+              "id": "scale-vehicle-2-point-15",
+              "time": 44.210526,
+              "x": 528,
+              "y": 285
+            },
+            {
+              "id": "scale-vehicle-2-point-16",
+              "time": 47.368421,
+              "x": 460,
+              "y": 323
+            },
+            {
+              "id": "scale-vehicle-2-point-17",
+              "time": 50.526316,
+              "x": 392,
+              "y": 303
+            },
+            {
+              "id": "scale-vehicle-2-point-18",
+              "time": 53.684211,
+              "x": 324,
+              "y": 261
+            },
+            {
+              "id": "scale-vehicle-2-point-19",
+              "time": 56.842105,
+              "x": 256,
+              "y": 279
+            },
+            {
+              "id": "scale-vehicle-2-point-20",
+              "time": 60,
+              "x": 188,
+              "y": 315
+            }
+          ],
+          "paths": [
+            {
+              "id": "scale-vehicle-2-path-1",
+              "fromPointId": "scale-vehicle-2-point-1",
+              "toPointId": "scale-vehicle-2-point-2",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1457.333333,
+                "y": 283
+              },
+              "control2": {
+                "x": 1434.666667,
+                "y": 295
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-2",
+              "fromPointId": "scale-vehicle-2-point-2",
+              "toPointId": "scale-vehicle-2-point-3",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1389.333333,
+                "y": 315.666667
+              },
+              "control2": {
+                "x": 1366.666667,
+                "y": 324.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-3",
+              "fromPointId": "scale-vehicle-2-point-3",
+              "toPointId": "scale-vehicle-2-point-4",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1321.333333,
+                "y": 321.666667
+              },
+              "control2": {
+                "x": 1298.666667,
+                "y": 310.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-4",
+              "fromPointId": "scale-vehicle-2-point-4",
+              "toPointId": "scale-vehicle-2-point-5",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1253.333333,
+                "y": 287
+              },
+              "control2": {
+                "x": 1230.666667,
+                "y": 275
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-5",
+              "fromPointId": "scale-vehicle-2-point-5",
+              "toPointId": "scale-vehicle-2-point-6",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1185.333333,
+                "y": 271
+              },
+              "control2": {
+                "x": 1162.666667,
+                "y": 279
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-6",
+              "fromPointId": "scale-vehicle-2-point-6",
+              "toPointId": "scale-vehicle-2-point-7",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1117.333333,
+                "y": 299.666667
+              },
+              "control2": {
+                "x": 1094.666667,
+                "y": 312.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-7",
+              "fromPointId": "scale-vehicle-2-point-7",
+              "toPointId": "scale-vehicle-2-point-8",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1049.333333,
+                "y": 321
+              },
+              "control2": {
+                "x": 1026.666667,
+                "y": 317
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-8",
+              "fromPointId": "scale-vehicle-2-point-8",
+              "toPointId": "scale-vehicle-2-point-9",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 981.333333,
+                "y": 301
+              },
+              "control2": {
+                "x": 958.666667,
+                "y": 289
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-9",
+              "fromPointId": "scale-vehicle-2-point-9",
+              "toPointId": "scale-vehicle-2-point-10",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 913.333333,
+                "y": 270.333333
+              },
+              "control2": {
+                "x": 890.666667,
+                "y": 263.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-10",
+              "fromPointId": "scale-vehicle-2-point-10",
+              "toPointId": "scale-vehicle-2-point-11",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 845.333333,
+                "y": 269
+              },
+              "control2": {
+                "x": 822.666667,
+                "y": 281
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-11",
+              "fromPointId": "scale-vehicle-2-point-11",
+              "toPointId": "scale-vehicle-2-point-12",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 777.333333,
+                "y": 305
+              },
+              "control2": {
+                "x": 754.666667,
+                "y": 317
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-12",
+              "fromPointId": "scale-vehicle-2-point-12",
+              "toPointId": "scale-vehicle-2-point-13",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 709.333333,
+                "y": 325
+              },
+              "control2": {
+                "x": 686.666667,
+                "y": 321
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-13",
+              "fromPointId": "scale-vehicle-2-point-13",
+              "toPointId": "scale-vehicle-2-point-14",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 641.333333,
+                "y": 301
+              },
+              "control2": {
+                "x": 618.666667,
+                "y": 285
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-14",
+              "fromPointId": "scale-vehicle-2-point-14",
+              "toPointId": "scale-vehicle-2-point-15",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 573.333333,
+                "y": 274.333333
+              },
+              "control2": {
+                "x": 550.666667,
+                "y": 279.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-15",
+              "fromPointId": "scale-vehicle-2-point-15",
+              "toPointId": "scale-vehicle-2-point-16",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 505.333333,
+                "y": 297.666667
+              },
+              "control2": {
+                "x": 482.666667,
+                "y": 310.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-16",
+              "fromPointId": "scale-vehicle-2-point-16",
+              "toPointId": "scale-vehicle-2-point-17",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 437.333333,
+                "y": 316.333333
+              },
+              "control2": {
+                "x": 414.666667,
+                "y": 309.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-17",
+              "fromPointId": "scale-vehicle-2-point-17",
+              "toPointId": "scale-vehicle-2-point-18",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 369.333333,
+                "y": 289
+              },
+              "control2": {
+                "x": 346.666667,
+                "y": 275
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-18",
+              "fromPointId": "scale-vehicle-2-point-18",
+              "toPointId": "scale-vehicle-2-point-19",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 301.333333,
+                "y": 267
+              },
+              "control2": {
+                "x": 278.666667,
+                "y": 273
+              }
+            },
+            {
+              "id": "scale-vehicle-2-path-19",
+              "fromPointId": "scale-vehicle-2-point-19",
+              "toPointId": "scale-vehicle-2-point-20",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 233.333333,
+                "y": 291
+              },
+              "control2": {
+                "x": 210.666667,
+                "y": 303
+              }
+            }
+          ]
+        },
+        "stateTracks": {
+          "indicator": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-2-indicator-1",
+                "time": 0,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-2",
+                "time": 3.157895,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-3",
+                "time": 6.315789,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-4",
+                "time": 9.473684,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-5",
+                "time": 12.631579,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-6",
+                "time": 15.789474,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-7",
+                "time": 18.947368,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-8",
+                "time": 22.105263,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-9",
+                "time": 25.263158,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-10",
+                "time": 28.421053,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-11",
+                "time": 31.578947,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-12",
+                "time": 34.736842,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-13",
+                "time": 37.894737,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-14",
+                "time": 41.052632,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-15",
+                "time": 44.210526,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-16",
+                "time": 47.368421,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-17",
+                "time": 50.526316,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-18",
+                "time": 53.684211,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-19",
+                "time": 56.842105,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-2-indicator-20",
+                "time": 60,
+                "value": "left"
+              }
+            ]
+          },
+          "brakeLight": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-2-brake-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-brake-2",
+                "time": 3.157895,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-brake-3",
+                "time": 6.315789,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-brake-4",
+                "time": 9.473684,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-brake-5",
+                "time": 12.631579,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-brake-6",
+                "time": 15.789474,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-brake-7",
+                "time": 18.947368,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-brake-8",
+                "time": 22.105263,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-brake-9",
+                "time": 25.263158,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-brake-10",
+                "time": 28.421053,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-brake-11",
+                "time": 31.578947,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-brake-12",
+                "time": 34.736842,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-brake-13",
+                "time": 37.894737,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-brake-14",
+                "time": 41.052632,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-brake-15",
+                "time": 44.210526,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-brake-16",
+                "time": 47.368421,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-brake-17",
+                "time": 50.526316,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-brake-18",
+                "time": 53.684211,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-brake-19",
+                "time": 56.842105,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-brake-20",
+                "time": 60,
+                "value": true
+              }
+            ]
+          },
+          "headlight": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-2-headlight-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-headlight-2",
+                "time": 3.157895,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-headlight-3",
+                "time": 6.315789,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-headlight-4",
+                "time": 9.473684,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-headlight-5",
+                "time": 12.631579,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-headlight-6",
+                "time": 15.789474,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-headlight-7",
+                "time": 18.947368,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-headlight-8",
+                "time": 22.105263,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-headlight-9",
+                "time": 25.263158,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-headlight-10",
+                "time": 28.421053,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-headlight-11",
+                "time": 31.578947,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-headlight-12",
+                "time": 34.736842,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-headlight-13",
+                "time": 37.894737,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-headlight-14",
+                "time": 41.052632,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-headlight-15",
+                "time": 44.210526,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-headlight-16",
+                "time": 47.368421,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-headlight-17",
+                "time": 50.526316,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-headlight-18",
+                "time": 53.684211,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-headlight-19",
+                "time": 56.842105,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-headlight-20",
+                "time": 60,
+                "value": false
+              }
+            ]
+          },
+          "horn": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-2-horn-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-horn-2",
+                "time": 3.157895,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-horn-3",
+                "time": 6.315789,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-horn-4",
+                "time": 9.473684,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-horn-5",
+                "time": 12.631579,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-horn-6",
+                "time": 15.789474,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-horn-7",
+                "time": 18.947368,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-horn-8",
+                "time": 22.105263,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-horn-9",
+                "time": 25.263158,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-horn-10",
+                "time": 28.421053,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-horn-11",
+                "time": 31.578947,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-horn-12",
+                "time": 34.736842,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-horn-13",
+                "time": 37.894737,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-horn-14",
+                "time": 41.052632,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-horn-15",
+                "time": 44.210526,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-horn-16",
+                "time": 47.368421,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-horn-17",
+                "time": 50.526316,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-horn-18",
+                "time": 53.684211,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-2-horn-19",
+                "time": 56.842105,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-2-horn-20",
+                "time": 60,
+                "value": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "scale-vehicle-3",
+        "type": "vehicle",
+        "assetId": "car-blue-sedan",
+        "movement": {
+          "points": [
+            {
+              "id": "scale-vehicle-3-point-1",
+              "time": 0,
+              "x": 120,
+              "y": 416
+            },
+            {
+              "id": "scale-vehicle-3-point-2",
+              "time": 3.157895,
+              "x": 188,
+              "y": 452
+            },
+            {
+              "id": "scale-vehicle-3-point-3",
+              "time": 6.315789,
+              "x": 256,
+              "y": 478
+            },
+            {
+              "id": "scale-vehicle-3-point-4",
+              "time": 9.473684,
+              "x": 324,
+              "y": 444
+            },
+            {
+              "id": "scale-vehicle-3-point-5",
+              "time": 12.631579,
+              "x": 392,
+              "y": 408
+            },
+            {
+              "id": "scale-vehicle-3-point-6",
+              "time": 15.789474,
+              "x": 460,
+              "y": 432
+            },
+            {
+              "id": "scale-vehicle-3-point-7",
+              "time": 18.947368,
+              "x": 528,
+              "y": 470
+            },
+            {
+              "id": "scale-vehicle-3-point-8",
+              "time": 22.105263,
+              "x": 596,
+              "y": 458
+            },
+            {
+              "id": "scale-vehicle-3-point-9",
+              "time": 25.263158,
+              "x": 664,
+              "y": 422
+            },
+            {
+              "id": "scale-vehicle-3-point-10",
+              "time": 28.421053,
+              "x": 732,
+              "y": 402
+            },
+            {
+              "id": "scale-vehicle-3-point-11",
+              "time": 31.578947,
+              "x": 800,
+              "y": 438
+            },
+            {
+              "id": "scale-vehicle-3-point-12",
+              "time": 34.736842,
+              "x": 868,
+              "y": 474
+            },
+            {
+              "id": "scale-vehicle-3-point-13",
+              "time": 37.894737,
+              "x": 936,
+              "y": 462
+            },
+            {
+              "id": "scale-vehicle-3-point-14",
+              "time": 41.052632,
+              "x": 1004,
+              "y": 414
+            },
+            {
+              "id": "scale-vehicle-3-point-15",
+              "time": 44.210526,
+              "x": 1072,
+              "y": 430
+            },
+            {
+              "id": "scale-vehicle-3-point-16",
+              "time": 47.368421,
+              "x": 1140,
+              "y": 468
+            },
+            {
+              "id": "scale-vehicle-3-point-17",
+              "time": 50.526316,
+              "x": 1208,
+              "y": 448
+            },
+            {
+              "id": "scale-vehicle-3-point-18",
+              "time": 53.684211,
+              "x": 1276,
+              "y": 406
+            },
+            {
+              "id": "scale-vehicle-3-point-19",
+              "time": 56.842105,
+              "x": 1344,
+              "y": 424
+            },
+            {
+              "id": "scale-vehicle-3-point-20",
+              "time": 60,
+              "x": 1412,
+              "y": 460
+            }
+          ],
+          "paths": [
+            {
+              "id": "scale-vehicle-3-path-1",
+              "fromPointId": "scale-vehicle-3-point-1",
+              "toPointId": "scale-vehicle-3-point-2",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 142.666667,
+                "y": 428
+              },
+              "control2": {
+                "x": 165.333333,
+                "y": 440
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-2",
+              "fromPointId": "scale-vehicle-3-point-2",
+              "toPointId": "scale-vehicle-3-point-3",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 210.666667,
+                "y": 460.666667
+              },
+              "control2": {
+                "x": 233.333333,
+                "y": 469.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-3",
+              "fromPointId": "scale-vehicle-3-point-3",
+              "toPointId": "scale-vehicle-3-point-4",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 278.666667,
+                "y": 466.666667
+              },
+              "control2": {
+                "x": 301.333333,
+                "y": 455.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-4",
+              "fromPointId": "scale-vehicle-3-point-4",
+              "toPointId": "scale-vehicle-3-point-5",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 346.666667,
+                "y": 432
+              },
+              "control2": {
+                "x": 369.333333,
+                "y": 420
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-5",
+              "fromPointId": "scale-vehicle-3-point-5",
+              "toPointId": "scale-vehicle-3-point-6",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 414.666667,
+                "y": 416
+              },
+              "control2": {
+                "x": 437.333333,
+                "y": 424
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-6",
+              "fromPointId": "scale-vehicle-3-point-6",
+              "toPointId": "scale-vehicle-3-point-7",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 482.666667,
+                "y": 444.666667
+              },
+              "control2": {
+                "x": 505.333333,
+                "y": 457.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-7",
+              "fromPointId": "scale-vehicle-3-point-7",
+              "toPointId": "scale-vehicle-3-point-8",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 550.666667,
+                "y": 466
+              },
+              "control2": {
+                "x": 573.333333,
+                "y": 462
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-8",
+              "fromPointId": "scale-vehicle-3-point-8",
+              "toPointId": "scale-vehicle-3-point-9",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 618.666667,
+                "y": 446
+              },
+              "control2": {
+                "x": 641.333333,
+                "y": 434
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-9",
+              "fromPointId": "scale-vehicle-3-point-9",
+              "toPointId": "scale-vehicle-3-point-10",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 686.666667,
+                "y": 415.333333
+              },
+              "control2": {
+                "x": 709.333333,
+                "y": 408.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-10",
+              "fromPointId": "scale-vehicle-3-point-10",
+              "toPointId": "scale-vehicle-3-point-11",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 754.666667,
+                "y": 414
+              },
+              "control2": {
+                "x": 777.333333,
+                "y": 426
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-11",
+              "fromPointId": "scale-vehicle-3-point-11",
+              "toPointId": "scale-vehicle-3-point-12",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 822.666667,
+                "y": 450
+              },
+              "control2": {
+                "x": 845.333333,
+                "y": 462
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-12",
+              "fromPointId": "scale-vehicle-3-point-12",
+              "toPointId": "scale-vehicle-3-point-13",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 890.666667,
+                "y": 470
+              },
+              "control2": {
+                "x": 913.333333,
+                "y": 466
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-13",
+              "fromPointId": "scale-vehicle-3-point-13",
+              "toPointId": "scale-vehicle-3-point-14",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 958.666667,
+                "y": 446
+              },
+              "control2": {
+                "x": 981.333333,
+                "y": 430
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-14",
+              "fromPointId": "scale-vehicle-3-point-14",
+              "toPointId": "scale-vehicle-3-point-15",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1026.666667,
+                "y": 419.333333
+              },
+              "control2": {
+                "x": 1049.333333,
+                "y": 424.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-15",
+              "fromPointId": "scale-vehicle-3-point-15",
+              "toPointId": "scale-vehicle-3-point-16",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1094.666667,
+                "y": 442.666667
+              },
+              "control2": {
+                "x": 1117.333333,
+                "y": 455.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-16",
+              "fromPointId": "scale-vehicle-3-point-16",
+              "toPointId": "scale-vehicle-3-point-17",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1162.666667,
+                "y": 461.333333
+              },
+              "control2": {
+                "x": 1185.333333,
+                "y": 454.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-17",
+              "fromPointId": "scale-vehicle-3-point-17",
+              "toPointId": "scale-vehicle-3-point-18",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1230.666667,
+                "y": 434
+              },
+              "control2": {
+                "x": 1253.333333,
+                "y": 420
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-18",
+              "fromPointId": "scale-vehicle-3-point-18",
+              "toPointId": "scale-vehicle-3-point-19",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1298.666667,
+                "y": 412
+              },
+              "control2": {
+                "x": 1321.333333,
+                "y": 418
+              }
+            },
+            {
+              "id": "scale-vehicle-3-path-19",
+              "fromPointId": "scale-vehicle-3-point-19",
+              "toPointId": "scale-vehicle-3-point-20",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1366.666667,
+                "y": 436
+              },
+              "control2": {
+                "x": 1389.333333,
+                "y": 448
+              }
+            }
+          ]
+        },
+        "stateTracks": {
+          "indicator": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-3-indicator-1",
+                "time": 0,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-2",
+                "time": 3.157895,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-3",
+                "time": 6.315789,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-4",
+                "time": 9.473684,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-5",
+                "time": 12.631579,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-6",
+                "time": 15.789474,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-7",
+                "time": 18.947368,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-8",
+                "time": 22.105263,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-9",
+                "time": 25.263158,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-10",
+                "time": 28.421053,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-11",
+                "time": 31.578947,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-12",
+                "time": 34.736842,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-13",
+                "time": 37.894737,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-14",
+                "time": 41.052632,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-15",
+                "time": 44.210526,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-16",
+                "time": 47.368421,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-17",
+                "time": 50.526316,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-18",
+                "time": 53.684211,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-19",
+                "time": 56.842105,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-3-indicator-20",
+                "time": 60,
+                "value": "left"
+              }
+            ]
+          },
+          "brakeLight": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-3-brake-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-brake-2",
+                "time": 3.157895,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-brake-3",
+                "time": 6.315789,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-brake-4",
+                "time": 9.473684,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-brake-5",
+                "time": 12.631579,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-brake-6",
+                "time": 15.789474,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-brake-7",
+                "time": 18.947368,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-brake-8",
+                "time": 22.105263,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-brake-9",
+                "time": 25.263158,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-brake-10",
+                "time": 28.421053,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-brake-11",
+                "time": 31.578947,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-brake-12",
+                "time": 34.736842,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-brake-13",
+                "time": 37.894737,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-brake-14",
+                "time": 41.052632,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-brake-15",
+                "time": 44.210526,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-brake-16",
+                "time": 47.368421,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-brake-17",
+                "time": 50.526316,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-brake-18",
+                "time": 53.684211,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-brake-19",
+                "time": 56.842105,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-brake-20",
+                "time": 60,
+                "value": false
+              }
+            ]
+          },
+          "headlight": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-3-headlight-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-headlight-2",
+                "time": 3.157895,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-headlight-3",
+                "time": 6.315789,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-headlight-4",
+                "time": 9.473684,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-headlight-5",
+                "time": 12.631579,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-headlight-6",
+                "time": 15.789474,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-headlight-7",
+                "time": 18.947368,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-headlight-8",
+                "time": 22.105263,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-headlight-9",
+                "time": 25.263158,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-headlight-10",
+                "time": 28.421053,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-headlight-11",
+                "time": 31.578947,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-headlight-12",
+                "time": 34.736842,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-headlight-13",
+                "time": 37.894737,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-headlight-14",
+                "time": 41.052632,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-headlight-15",
+                "time": 44.210526,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-headlight-16",
+                "time": 47.368421,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-headlight-17",
+                "time": 50.526316,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-headlight-18",
+                "time": 53.684211,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-headlight-19",
+                "time": 56.842105,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-headlight-20",
+                "time": 60,
+                "value": true
+              }
+            ]
+          },
+          "horn": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-3-horn-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-horn-2",
+                "time": 3.157895,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-horn-3",
+                "time": 6.315789,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-horn-4",
+                "time": 9.473684,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-horn-5",
+                "time": 12.631579,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-horn-6",
+                "time": 15.789474,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-horn-7",
+                "time": 18.947368,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-horn-8",
+                "time": 22.105263,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-horn-9",
+                "time": 25.263158,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-horn-10",
+                "time": 28.421053,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-horn-11",
+                "time": 31.578947,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-horn-12",
+                "time": 34.736842,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-horn-13",
+                "time": 37.894737,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-horn-14",
+                "time": 41.052632,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-horn-15",
+                "time": 44.210526,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-horn-16",
+                "time": 47.368421,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-horn-17",
+                "time": 50.526316,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-horn-18",
+                "time": 53.684211,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-3-horn-19",
+                "time": 56.842105,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-3-horn-20",
+                "time": 60,
+                "value": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "scale-vehicle-4",
+        "type": "vehicle",
+        "assetId": "car-blue-sport",
+        "movement": {
+          "points": [
+            {
+              "id": "scale-vehicle-4-point-1",
+              "time": 0,
+              "x": 1480,
+              "y": 561
+            },
+            {
+              "id": "scale-vehicle-4-point-2",
+              "time": 3.157895,
+              "x": 1412,
+              "y": 597
+            },
+            {
+              "id": "scale-vehicle-4-point-3",
+              "time": 6.315789,
+              "x": 1344,
+              "y": 623
+            },
+            {
+              "id": "scale-vehicle-4-point-4",
+              "time": 9.473684,
+              "x": 1276,
+              "y": 589
+            },
+            {
+              "id": "scale-vehicle-4-point-5",
+              "time": 12.631579,
+              "x": 1208,
+              "y": 553
+            },
+            {
+              "id": "scale-vehicle-4-point-6",
+              "time": 15.789474,
+              "x": 1140,
+              "y": 577
+            },
+            {
+              "id": "scale-vehicle-4-point-7",
+              "time": 18.947368,
+              "x": 1072,
+              "y": 615
+            },
+            {
+              "id": "scale-vehicle-4-point-8",
+              "time": 22.105263,
+              "x": 1004,
+              "y": 603
+            },
+            {
+              "id": "scale-vehicle-4-point-9",
+              "time": 25.263158,
+              "x": 936,
+              "y": 567
+            },
+            {
+              "id": "scale-vehicle-4-point-10",
+              "time": 28.421053,
+              "x": 868,
+              "y": 547
+            },
+            {
+              "id": "scale-vehicle-4-point-11",
+              "time": 31.578947,
+              "x": 800,
+              "y": 583
+            },
+            {
+              "id": "scale-vehicle-4-point-12",
+              "time": 34.736842,
+              "x": 732,
+              "y": 619
+            },
+            {
+              "id": "scale-vehicle-4-point-13",
+              "time": 37.894737,
+              "x": 664,
+              "y": 607
+            },
+            {
+              "id": "scale-vehicle-4-point-14",
+              "time": 41.052632,
+              "x": 596,
+              "y": 559
+            },
+            {
+              "id": "scale-vehicle-4-point-15",
+              "time": 44.210526,
+              "x": 528,
+              "y": 575
+            },
+            {
+              "id": "scale-vehicle-4-point-16",
+              "time": 47.368421,
+              "x": 460,
+              "y": 613
+            },
+            {
+              "id": "scale-vehicle-4-point-17",
+              "time": 50.526316,
+              "x": 392,
+              "y": 593
+            },
+            {
+              "id": "scale-vehicle-4-point-18",
+              "time": 53.684211,
+              "x": 324,
+              "y": 551
+            },
+            {
+              "id": "scale-vehicle-4-point-19",
+              "time": 56.842105,
+              "x": 256,
+              "y": 569
+            },
+            {
+              "id": "scale-vehicle-4-point-20",
+              "time": 60,
+              "x": 188,
+              "y": 605
+            }
+          ],
+          "paths": [
+            {
+              "id": "scale-vehicle-4-path-1",
+              "fromPointId": "scale-vehicle-4-point-1",
+              "toPointId": "scale-vehicle-4-point-2",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1457.333333,
+                "y": 573
+              },
+              "control2": {
+                "x": 1434.666667,
+                "y": 585
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-2",
+              "fromPointId": "scale-vehicle-4-point-2",
+              "toPointId": "scale-vehicle-4-point-3",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1389.333333,
+                "y": 605.666667
+              },
+              "control2": {
+                "x": 1366.666667,
+                "y": 614.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-3",
+              "fromPointId": "scale-vehicle-4-point-3",
+              "toPointId": "scale-vehicle-4-point-4",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1321.333333,
+                "y": 611.666667
+              },
+              "control2": {
+                "x": 1298.666667,
+                "y": 600.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-4",
+              "fromPointId": "scale-vehicle-4-point-4",
+              "toPointId": "scale-vehicle-4-point-5",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1253.333333,
+                "y": 577
+              },
+              "control2": {
+                "x": 1230.666667,
+                "y": 565
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-5",
+              "fromPointId": "scale-vehicle-4-point-5",
+              "toPointId": "scale-vehicle-4-point-6",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1185.333333,
+                "y": 561
+              },
+              "control2": {
+                "x": 1162.666667,
+                "y": 569
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-6",
+              "fromPointId": "scale-vehicle-4-point-6",
+              "toPointId": "scale-vehicle-4-point-7",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1117.333333,
+                "y": 589.666667
+              },
+              "control2": {
+                "x": 1094.666667,
+                "y": 602.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-7",
+              "fromPointId": "scale-vehicle-4-point-7",
+              "toPointId": "scale-vehicle-4-point-8",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1049.333333,
+                "y": 611
+              },
+              "control2": {
+                "x": 1026.666667,
+                "y": 607
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-8",
+              "fromPointId": "scale-vehicle-4-point-8",
+              "toPointId": "scale-vehicle-4-point-9",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 981.333333,
+                "y": 591
+              },
+              "control2": {
+                "x": 958.666667,
+                "y": 579
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-9",
+              "fromPointId": "scale-vehicle-4-point-9",
+              "toPointId": "scale-vehicle-4-point-10",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 913.333333,
+                "y": 560.333333
+              },
+              "control2": {
+                "x": 890.666667,
+                "y": 553.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-10",
+              "fromPointId": "scale-vehicle-4-point-10",
+              "toPointId": "scale-vehicle-4-point-11",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 845.333333,
+                "y": 559
+              },
+              "control2": {
+                "x": 822.666667,
+                "y": 571
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-11",
+              "fromPointId": "scale-vehicle-4-point-11",
+              "toPointId": "scale-vehicle-4-point-12",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 777.333333,
+                "y": 595
+              },
+              "control2": {
+                "x": 754.666667,
+                "y": 607
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-12",
+              "fromPointId": "scale-vehicle-4-point-12",
+              "toPointId": "scale-vehicle-4-point-13",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 709.333333,
+                "y": 615
+              },
+              "control2": {
+                "x": 686.666667,
+                "y": 611
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-13",
+              "fromPointId": "scale-vehicle-4-point-13",
+              "toPointId": "scale-vehicle-4-point-14",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 641.333333,
+                "y": 591
+              },
+              "control2": {
+                "x": 618.666667,
+                "y": 575
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-14",
+              "fromPointId": "scale-vehicle-4-point-14",
+              "toPointId": "scale-vehicle-4-point-15",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 573.333333,
+                "y": 564.333333
+              },
+              "control2": {
+                "x": 550.666667,
+                "y": 569.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-15",
+              "fromPointId": "scale-vehicle-4-point-15",
+              "toPointId": "scale-vehicle-4-point-16",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 505.333333,
+                "y": 587.666667
+              },
+              "control2": {
+                "x": 482.666667,
+                "y": 600.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-16",
+              "fromPointId": "scale-vehicle-4-point-16",
+              "toPointId": "scale-vehicle-4-point-17",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 437.333333,
+                "y": 606.333333
+              },
+              "control2": {
+                "x": 414.666667,
+                "y": 599.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-17",
+              "fromPointId": "scale-vehicle-4-point-17",
+              "toPointId": "scale-vehicle-4-point-18",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 369.333333,
+                "y": 579
+              },
+              "control2": {
+                "x": 346.666667,
+                "y": 565
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-18",
+              "fromPointId": "scale-vehicle-4-point-18",
+              "toPointId": "scale-vehicle-4-point-19",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 301.333333,
+                "y": 557
+              },
+              "control2": {
+                "x": 278.666667,
+                "y": 563
+              }
+            },
+            {
+              "id": "scale-vehicle-4-path-19",
+              "fromPointId": "scale-vehicle-4-point-19",
+              "toPointId": "scale-vehicle-4-point-20",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 233.333333,
+                "y": 581
+              },
+              "control2": {
+                "x": 210.666667,
+                "y": 593
+              }
+            }
+          ]
+        },
+        "stateTracks": {
+          "indicator": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-4-indicator-1",
+                "time": 0,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-2",
+                "time": 3.157895,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-3",
+                "time": 6.315789,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-4",
+                "time": 9.473684,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-5",
+                "time": 12.631579,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-6",
+                "time": 15.789474,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-7",
+                "time": 18.947368,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-8",
+                "time": 22.105263,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-9",
+                "time": 25.263158,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-10",
+                "time": 28.421053,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-11",
+                "time": 31.578947,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-12",
+                "time": 34.736842,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-13",
+                "time": 37.894737,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-14",
+                "time": 41.052632,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-15",
+                "time": 44.210526,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-16",
+                "time": 47.368421,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-17",
+                "time": 50.526316,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-18",
+                "time": 53.684211,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-19",
+                "time": 56.842105,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-4-indicator-20",
+                "time": 60,
+                "value": "left"
+              }
+            ]
+          },
+          "brakeLight": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-4-brake-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-brake-2",
+                "time": 3.157895,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-brake-3",
+                "time": 6.315789,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-brake-4",
+                "time": 9.473684,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-brake-5",
+                "time": 12.631579,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-brake-6",
+                "time": 15.789474,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-brake-7",
+                "time": 18.947368,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-brake-8",
+                "time": 22.105263,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-brake-9",
+                "time": 25.263158,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-brake-10",
+                "time": 28.421053,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-brake-11",
+                "time": 31.578947,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-brake-12",
+                "time": 34.736842,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-brake-13",
+                "time": 37.894737,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-brake-14",
+                "time": 41.052632,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-brake-15",
+                "time": 44.210526,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-brake-16",
+                "time": 47.368421,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-brake-17",
+                "time": 50.526316,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-brake-18",
+                "time": 53.684211,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-brake-19",
+                "time": 56.842105,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-brake-20",
+                "time": 60,
+                "value": true
+              }
+            ]
+          },
+          "headlight": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-4-headlight-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-headlight-2",
+                "time": 3.157895,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-headlight-3",
+                "time": 6.315789,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-headlight-4",
+                "time": 9.473684,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-headlight-5",
+                "time": 12.631579,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-headlight-6",
+                "time": 15.789474,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-headlight-7",
+                "time": 18.947368,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-headlight-8",
+                "time": 22.105263,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-headlight-9",
+                "time": 25.263158,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-headlight-10",
+                "time": 28.421053,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-headlight-11",
+                "time": 31.578947,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-headlight-12",
+                "time": 34.736842,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-headlight-13",
+                "time": 37.894737,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-headlight-14",
+                "time": 41.052632,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-headlight-15",
+                "time": 44.210526,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-headlight-16",
+                "time": 47.368421,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-headlight-17",
+                "time": 50.526316,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-headlight-18",
+                "time": 53.684211,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-headlight-19",
+                "time": 56.842105,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-headlight-20",
+                "time": 60,
+                "value": false
+              }
+            ]
+          },
+          "horn": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-4-horn-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-horn-2",
+                "time": 3.157895,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-horn-3",
+                "time": 6.315789,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-horn-4",
+                "time": 9.473684,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-horn-5",
+                "time": 12.631579,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-horn-6",
+                "time": 15.789474,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-horn-7",
+                "time": 18.947368,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-horn-8",
+                "time": 22.105263,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-horn-9",
+                "time": 25.263158,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-horn-10",
+                "time": 28.421053,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-horn-11",
+                "time": 31.578947,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-horn-12",
+                "time": 34.736842,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-horn-13",
+                "time": 37.894737,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-horn-14",
+                "time": 41.052632,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-horn-15",
+                "time": 44.210526,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-horn-16",
+                "time": 47.368421,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-horn-17",
+                "time": 50.526316,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-horn-18",
+                "time": 53.684211,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-4-horn-19",
+                "time": 56.842105,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-4-horn-20",
+                "time": 60,
+                "value": true
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "scale-vehicle-5",
+        "type": "vehicle",
+        "assetId": "car-blue-sedan",
+        "movement": {
+          "points": [
+            {
+              "id": "scale-vehicle-5-point-1",
+              "time": 0,
+              "x": 120,
+              "y": 706
+            },
+            {
+              "id": "scale-vehicle-5-point-2",
+              "time": 3.157895,
+              "x": 188,
+              "y": 742
+            },
+            {
+              "id": "scale-vehicle-5-point-3",
+              "time": 6.315789,
+              "x": 256,
+              "y": 768
+            },
+            {
+              "id": "scale-vehicle-5-point-4",
+              "time": 9.473684,
+              "x": 324,
+              "y": 734
+            },
+            {
+              "id": "scale-vehicle-5-point-5",
+              "time": 12.631579,
+              "x": 392,
+              "y": 698
+            },
+            {
+              "id": "scale-vehicle-5-point-6",
+              "time": 15.789474,
+              "x": 460,
+              "y": 722
+            },
+            {
+              "id": "scale-vehicle-5-point-7",
+              "time": 18.947368,
+              "x": 528,
+              "y": 760
+            },
+            {
+              "id": "scale-vehicle-5-point-8",
+              "time": 22.105263,
+              "x": 596,
+              "y": 748
+            },
+            {
+              "id": "scale-vehicle-5-point-9",
+              "time": 25.263158,
+              "x": 664,
+              "y": 712
+            },
+            {
+              "id": "scale-vehicle-5-point-10",
+              "time": 28.421053,
+              "x": 732,
+              "y": 692
+            },
+            {
+              "id": "scale-vehicle-5-point-11",
+              "time": 31.578947,
+              "x": 800,
+              "y": 728
+            },
+            {
+              "id": "scale-vehicle-5-point-12",
+              "time": 34.736842,
+              "x": 868,
+              "y": 764
+            },
+            {
+              "id": "scale-vehicle-5-point-13",
+              "time": 37.894737,
+              "x": 936,
+              "y": 752
+            },
+            {
+              "id": "scale-vehicle-5-point-14",
+              "time": 41.052632,
+              "x": 1004,
+              "y": 704
+            },
+            {
+              "id": "scale-vehicle-5-point-15",
+              "time": 44.210526,
+              "x": 1072,
+              "y": 720
+            },
+            {
+              "id": "scale-vehicle-5-point-16",
+              "time": 47.368421,
+              "x": 1140,
+              "y": 758
+            },
+            {
+              "id": "scale-vehicle-5-point-17",
+              "time": 50.526316,
+              "x": 1208,
+              "y": 738
+            },
+            {
+              "id": "scale-vehicle-5-point-18",
+              "time": 53.684211,
+              "x": 1276,
+              "y": 696
+            },
+            {
+              "id": "scale-vehicle-5-point-19",
+              "time": 56.842105,
+              "x": 1344,
+              "y": 714
+            },
+            {
+              "id": "scale-vehicle-5-point-20",
+              "time": 60,
+              "x": 1412,
+              "y": 750
+            }
+          ],
+          "paths": [
+            {
+              "id": "scale-vehicle-5-path-1",
+              "fromPointId": "scale-vehicle-5-point-1",
+              "toPointId": "scale-vehicle-5-point-2",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 142.666667,
+                "y": 718
+              },
+              "control2": {
+                "x": 165.333333,
+                "y": 730
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-2",
+              "fromPointId": "scale-vehicle-5-point-2",
+              "toPointId": "scale-vehicle-5-point-3",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 210.666667,
+                "y": 750.666667
+              },
+              "control2": {
+                "x": 233.333333,
+                "y": 759.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-3",
+              "fromPointId": "scale-vehicle-5-point-3",
+              "toPointId": "scale-vehicle-5-point-4",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 278.666667,
+                "y": 756.666667
+              },
+              "control2": {
+                "x": 301.333333,
+                "y": 745.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-4",
+              "fromPointId": "scale-vehicle-5-point-4",
+              "toPointId": "scale-vehicle-5-point-5",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 346.666667,
+                "y": 722
+              },
+              "control2": {
+                "x": 369.333333,
+                "y": 710
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-5",
+              "fromPointId": "scale-vehicle-5-point-5",
+              "toPointId": "scale-vehicle-5-point-6",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 414.666667,
+                "y": 706
+              },
+              "control2": {
+                "x": 437.333333,
+                "y": 714
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-6",
+              "fromPointId": "scale-vehicle-5-point-6",
+              "toPointId": "scale-vehicle-5-point-7",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 482.666667,
+                "y": 734.666667
+              },
+              "control2": {
+                "x": 505.333333,
+                "y": 747.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-7",
+              "fromPointId": "scale-vehicle-5-point-7",
+              "toPointId": "scale-vehicle-5-point-8",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 550.666667,
+                "y": 756
+              },
+              "control2": {
+                "x": 573.333333,
+                "y": 752
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-8",
+              "fromPointId": "scale-vehicle-5-point-8",
+              "toPointId": "scale-vehicle-5-point-9",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 618.666667,
+                "y": 736
+              },
+              "control2": {
+                "x": 641.333333,
+                "y": 724
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-9",
+              "fromPointId": "scale-vehicle-5-point-9",
+              "toPointId": "scale-vehicle-5-point-10",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 686.666667,
+                "y": 705.333333
+              },
+              "control2": {
+                "x": 709.333333,
+                "y": 698.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-10",
+              "fromPointId": "scale-vehicle-5-point-10",
+              "toPointId": "scale-vehicle-5-point-11",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 754.666667,
+                "y": 704
+              },
+              "control2": {
+                "x": 777.333333,
+                "y": 716
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-11",
+              "fromPointId": "scale-vehicle-5-point-11",
+              "toPointId": "scale-vehicle-5-point-12",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 822.666667,
+                "y": 740
+              },
+              "control2": {
+                "x": 845.333333,
+                "y": 752
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-12",
+              "fromPointId": "scale-vehicle-5-point-12",
+              "toPointId": "scale-vehicle-5-point-13",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 890.666667,
+                "y": 760
+              },
+              "control2": {
+                "x": 913.333333,
+                "y": 756
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-13",
+              "fromPointId": "scale-vehicle-5-point-13",
+              "toPointId": "scale-vehicle-5-point-14",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 958.666667,
+                "y": 736
+              },
+              "control2": {
+                "x": 981.333333,
+                "y": 720
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-14",
+              "fromPointId": "scale-vehicle-5-point-14",
+              "toPointId": "scale-vehicle-5-point-15",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1026.666667,
+                "y": 709.333333
+              },
+              "control2": {
+                "x": 1049.333333,
+                "y": 714.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-15",
+              "fromPointId": "scale-vehicle-5-point-15",
+              "toPointId": "scale-vehicle-5-point-16",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1094.666667,
+                "y": 732.666667
+              },
+              "control2": {
+                "x": 1117.333333,
+                "y": 745.333333
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-16",
+              "fromPointId": "scale-vehicle-5-point-16",
+              "toPointId": "scale-vehicle-5-point-17",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1162.666667,
+                "y": 751.333333
+              },
+              "control2": {
+                "x": 1185.333333,
+                "y": 744.666667
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-17",
+              "fromPointId": "scale-vehicle-5-point-17",
+              "toPointId": "scale-vehicle-5-point-18",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1230.666667,
+                "y": 724
+              },
+              "control2": {
+                "x": 1253.333333,
+                "y": 710
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-18",
+              "fromPointId": "scale-vehicle-5-point-18",
+              "toPointId": "scale-vehicle-5-point-19",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1298.666667,
+                "y": 702
+              },
+              "control2": {
+                "x": 1321.333333,
+                "y": 708
+              }
+            },
+            {
+              "id": "scale-vehicle-5-path-19",
+              "fromPointId": "scale-vehicle-5-point-19",
+              "toPointId": "scale-vehicle-5-point-20",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1366.666667,
+                "y": 726
+              },
+              "control2": {
+                "x": 1389.333333,
+                "y": 738
+              }
+            }
+          ]
+        },
+        "stateTracks": {
+          "indicator": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-5-indicator-1",
+                "time": 0,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-2",
+                "time": 3.157895,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-3",
+                "time": 6.315789,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-4",
+                "time": 9.473684,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-5",
+                "time": 12.631579,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-6",
+                "time": 15.789474,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-7",
+                "time": 18.947368,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-8",
+                "time": 22.105263,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-9",
+                "time": 25.263158,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-10",
+                "time": 28.421053,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-11",
+                "time": 31.578947,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-12",
+                "time": 34.736842,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-13",
+                "time": 37.894737,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-14",
+                "time": 41.052632,
+                "value": "left"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-15",
+                "time": 44.210526,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-16",
+                "time": 47.368421,
+                "value": "right"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-17",
+                "time": 50.526316,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-18",
+                "time": 53.684211,
+                "value": "hazard"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-19",
+                "time": 56.842105,
+                "value": "off"
+              },
+              {
+                "id": "scale-vehicle-5-indicator-20",
+                "time": 60,
+                "value": "left"
+              }
+            ]
+          },
+          "brakeLight": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-5-brake-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-brake-2",
+                "time": 3.157895,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-brake-3",
+                "time": 6.315789,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-brake-4",
+                "time": 9.473684,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-brake-5",
+                "time": 12.631579,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-brake-6",
+                "time": 15.789474,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-brake-7",
+                "time": 18.947368,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-brake-8",
+                "time": 22.105263,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-brake-9",
+                "time": 25.263158,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-brake-10",
+                "time": 28.421053,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-brake-11",
+                "time": 31.578947,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-brake-12",
+                "time": 34.736842,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-brake-13",
+                "time": 37.894737,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-brake-14",
+                "time": 41.052632,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-brake-15",
+                "time": 44.210526,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-brake-16",
+                "time": 47.368421,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-brake-17",
+                "time": 50.526316,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-brake-18",
+                "time": 53.684211,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-brake-19",
+                "time": 56.842105,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-brake-20",
+                "time": 60,
+                "value": false
+              }
+            ]
+          },
+          "headlight": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-5-headlight-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-headlight-2",
+                "time": 3.157895,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-headlight-3",
+                "time": 6.315789,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-headlight-4",
+                "time": 9.473684,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-headlight-5",
+                "time": 12.631579,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-headlight-6",
+                "time": 15.789474,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-headlight-7",
+                "time": 18.947368,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-headlight-8",
+                "time": 22.105263,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-headlight-9",
+                "time": 25.263158,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-headlight-10",
+                "time": 28.421053,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-headlight-11",
+                "time": 31.578947,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-headlight-12",
+                "time": 34.736842,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-headlight-13",
+                "time": 37.894737,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-headlight-14",
+                "time": 41.052632,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-headlight-15",
+                "time": 44.210526,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-headlight-16",
+                "time": 47.368421,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-headlight-17",
+                "time": 50.526316,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-headlight-18",
+                "time": 53.684211,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-headlight-19",
+                "time": 56.842105,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-headlight-20",
+                "time": 60,
+                "value": true
+              }
+            ]
+          },
+          "horn": {
+            "keyframes": [
+              {
+                "id": "scale-vehicle-5-horn-1",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-horn-2",
+                "time": 3.157895,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-horn-3",
+                "time": 6.315789,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-horn-4",
+                "time": 9.473684,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-horn-5",
+                "time": 12.631579,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-horn-6",
+                "time": 15.789474,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-horn-7",
+                "time": 18.947368,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-horn-8",
+                "time": 22.105263,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-horn-9",
+                "time": 25.263158,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-horn-10",
+                "time": 28.421053,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-horn-11",
+                "time": 31.578947,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-horn-12",
+                "time": 34.736842,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-horn-13",
+                "time": 37.894737,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-horn-14",
+                "time": 41.052632,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-horn-15",
+                "time": 44.210526,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-horn-16",
+                "time": 47.368421,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-horn-17",
+                "time": 50.526316,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-horn-18",
+                "time": 53.684211,
+                "value": false
+              },
+              {
+                "id": "scale-vehicle-5-horn-19",
+                "time": 56.842105,
+                "value": true
+              },
+              {
+                "id": "scale-vehicle-5-horn-20",
+                "time": 60,
+                "value": false
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

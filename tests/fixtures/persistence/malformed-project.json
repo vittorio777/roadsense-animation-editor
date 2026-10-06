@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "animationId": "malformed-project",
+  "scene": {
+    "width": 1600,
+    "height": 900,
+    "objects": [
+  }
+}

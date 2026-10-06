@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "animationId": "phase-6-browser-round-trip",
+  "scene": {
+    "width": 1600,
+    "height": 900,
+    "background": {
+      "assetId": "intersection-01"
+    },
+    "objects": [
+      {
+        "id": "round-trip-vehicle",
+        "type": "vehicle",
+        "assetId": "car-blue-sedan",
+        "movement": {
+          "points": [
+            {
+              "id": "round-trip-point-0",
+              "time": 0,
+              "x": 800,
+              "y": 450
+            },
+            {
+              "id": "round-trip-point-1",
+              "time": 2.5,
+              "x": 420.25,
+              "y": 240.5
+            },
+            {
+              "id": "round-trip-point-2",
+              "time": 5.25,
+              "x": 920.75,
+              "y": 680.125
+            },
+            {
+              "id": "round-trip-point-3",
+              "time": 8.75,
+              "x": 1380.5,
+              "y": 310.25
+            }
+          ],
+          "paths": [
+            {
+              "id": "round-trip-path-0-1",
+              "fromPointId": "round-trip-point-0",
+              "toPointId": "round-trip-point-1",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 180.5,
+                "y": 720.25
+              },
+              "control2": {
+                "x": 673.25,
+                "y": 345.25
+              }
+            },
+            {
+              "id": "round-trip-path-1-2",
+              "fromPointId": "round-trip-point-1",
+              "toPointId": "round-trip-point-2",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 586.75,
+                "y": 387.04166666666663
+              },
+              "control2": {
+                "x": 1120.75,
+                "y": 120.5
+              }
+            },
+            {
+              "id": "round-trip-path-2-3",
+              "fromPointId": "round-trip-point-2",
+              "toPointId": "round-trip-point-3",
+              "type": "cubicBezier",
+              "control1": {
+                "x": 1040.125,
+                "y": 760.875
+              },
+              "control2": {
+                "x": 1227.25,
+                "y": 433.54166666666663
+              }
+            }
+          ]
+        },
+        "stateTracks": {
+          "indicator": {
+            "keyframes": [
+              {
+                "id": "round-trip-indicator-0",
+                "time": 0,
+                "value": "left"
+              },
+              {
+                "id": "round-trip-indicator-1",
+                "time": 1.5,
+                "value": "off"
+              },
+              {
+                "id": "round-trip-indicator-2",
+                "time": 3.25,
+                "value": "right"
+              },
+              {
+                "id": "round-trip-indicator-3",
+                "time": 5.5,
+                "value": "hazard"
+              },
+              {
+                "id": "round-trip-indicator-4",
+                "time": 8.25,
+                "value": "off"
+              }
+            ]
+          },
+          "brakeLight": {
+            "keyframes": [
+              {
+                "id": "round-trip-brake-0",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "round-trip-brake-1",
+                "time": 2,
+                "value": true
+              },
+              {
+                "id": "round-trip-brake-2",
+                "time": 4.75,
+                "value": false
+              }
+            ]
+          },
+          "headlight": {
+            "keyframes": [
+              {
+                "id": "round-trip-headlight-0",
+                "time": 0,
+                "value": true
+              },
+              {
+                "id": "round-trip-headlight-1",
+                "time": 7.5,
+                "value": false
+              }
+            ]
+          },
+          "horn": {
+            "keyframes": [
+              {
+                "id": "round-trip-horn-0",
+                "time": 0,
+                "value": false
+              },
+              {
+                "id": "round-trip-horn-1",
+                "time": 6.1,
+                "value": true
+              },
+              {
+                "id": "round-trip-horn-2",
+                "time": 6.6,
+                "value": false
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
