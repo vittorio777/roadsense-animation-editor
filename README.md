@@ -4,6 +4,8 @@ A desktop-first editor for authoring 2D vehicle animations: place vehicles, shap
 
 Built with React, TypeScript, React Konva, Zustand, Tailwind CSS, and Vite. This portfolio release contains the completed editor MVP, with its original application code and automated tests.
 
+**[Open the live demo](https://roadsense-animation-editor.vercel.app/)** — best viewed in a desktop browser.
+
 ![RoadSense MVP preview with five vehicles and an editable timeline](docs/media/public-mvp-preview.jpg)
 
 ## What you can do
