@@ -71,5 +71,3 @@ F5.1's resolver supplies a value at a time. Interval projection scans a visible 
 One data source keeps properties, duration editing, preview and persistence consistent. The costs are boundary normalization, more involved two-lane indicator mutation and careful open-end handling.
 
 Separate saved interval arrays were rejected because they duplicate state and need synchronization. Replacing keyframes with start/end objects would change the contract and cannot naturally express every discrete transition. Properties-only editing remains precise but does not provide the duration workflow.
-
-English edition of the accepted decision, retaining its MVP context, ownership and tradeoffs. Later-system plans are omitted.

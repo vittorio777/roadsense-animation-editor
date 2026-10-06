@@ -4,7 +4,7 @@
 
 ## Purpose and baseline
 
-Verify the accepted capabilities together from an empty project through authoring, preview, save and reload. [F7.13](phase-7-mvp-scale.md) supplies separate scale evidence; this gate does not duplicate it or add product features.
+Verify the accepted capabilities together from an empty project through authoring, preview, save and reload. [F7.13](phase-7-mvp-scale.md) supplies separate scale evidence.
 
 Phase 1–6 annotated tags and all preceding feature records were verified in private development history. Final human acceptance completed the remaining F7.14 record.
 
@@ -41,7 +41,7 @@ Successful load restored background, vehicle IDs, 4/3 points, paths, controls an
 | Independent Chrome | Not available for this run | Not available | Not available | Not available |
 | Independent Edge | Not available for this run | Not available | Not available | Not available |
 
-Chrome and Edge were named in the original plan, but their independent control channels were unavailable. Earlier phase results are not substituted as new final-release runs. The user accepted the completed workflow after reviewing the available evidence.
+Chrome and Edge were named in the original plan, but their independent control channels were unavailable.
 
 ## Persistence oracle
 
@@ -56,13 +56,11 @@ Both shared SHA-256:
 DA1C780D5FC08B20203AB9D939C5919199D18C8A352109CAAE5AD40A54A3756D
 ```
 
-This is historical evidence from the recorded downloads; temporary files are not published.
-
 Missing assets were rejected by the existing validator as invalid project with explicit unknown-asset details. This reflects the established pipeline, which also retains a distinct asset-resolution result.
 
-## Capture boundary and final gate
+## Captures and final gate
 
-Viewport captures were displayed interactively, but the browser channel did not export them as workspace files. No unavailable final capture paths or substituted screenshots are claimed.
+Viewport captures were displayed interactively, but the browser channel did not export them as workspace files.
 
 Automation, complete in-app workflow and human acceptance completed the Phase 7 gate. The original final feature commit was `test: complete animation editor mvp acceptance`, tagged `v0.1-editor-mvp` after acceptance.
 

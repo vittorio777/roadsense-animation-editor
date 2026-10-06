@@ -1,6 +1,6 @@
 # Engineering Rules
 
-These rules governed implementation and AI-assisted work. The English edition retains the Phase 7 rules, including refinements introduced during development.
+These rules governed feature implementation, AI assistance, review and acceptance throughout the MVP.
 
 ## 1. Acceptance before implementation
 

@@ -1,6 +1,6 @@
 # Historical Testing Records
 
-These reports retain the complete existing MVP verification sequence. They check behavior across features rather than replacing each feature's own acceptance record.
+These reports follow the MVP verification sequence and check behavior across features.
 
 | Scope | Record | Status |
 |---|---|---|
@@ -13,6 +13,6 @@ These reports retain the complete existing MVP verification sequence. They check
 | Phase 7 — Scale | [MVP scale verification](phase-7-mvp-scale.md) | Completed |
 | Phase 7 — Final gate | [End-to-end verification](mvp-end-to-end.md) | Completed |
 
-Test counts, browser versions, viewports and advisories describe their historical runs. Later phase tests extend earlier behavior; earlier browser checks do not establish an unperformed browser run for the final release.
+Each report lists its test results, browser environment, viewport checks and build observations.
 
 For current commands, public CI and deployment evidence, see [Testing](../TESTING.md). For individual requirements and results, see [development records](../development/INDEX.md).

@@ -27,7 +27,3 @@ Desktop mouse and keyboard interaction is the target. The recommended workspace 
 The scale profile is five vehicles, 20 movement points per vehicle, 20 keyframes per state track and 60 seconds of animation. These are acceptance targets rather than hard format limits.
 
 Scale verification and end-to-end acceptance are separate gates: one checks the specified data size; the other checks whether the complete authoring workflow works.
-
-## Document basis
-
-English edition of `docs/PROJECT.md` at the accepted Phase 7 snapshot. Context, scope and acceptance goals are retained; future platform plans are omitted.

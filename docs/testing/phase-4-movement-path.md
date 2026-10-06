@@ -46,10 +46,8 @@ Panel measurements describe available containers, not a changed logical aspect r
 | F4.9 | d3ef10e — time reorder topology |
 | F4.10 | 7dd5cc7 — deletion reconnection |
 
-These identify original development history, not commits in the clean public release.
-
 ## Captures, advisory and gate
 
-Captures were displayed during browser review, but the channel exposed no permitted filesystem export; no repository capture paths or substitute images are claimed. The interface could crop displayed edges, so layout also used measurements/accessibility.
+Browser review displayed captures interactively; the browser channel did not support exporting them to files. Layout checks included viewport measurements and accessibility observations.
 
 The successful build retained 576.96 kB advisory. Automated/browser/human gate passed. Original commit: `test: verify phase 4 movement paths`; tag: `phase-4-movement-path`.

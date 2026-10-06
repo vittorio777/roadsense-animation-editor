@@ -29,8 +29,6 @@ Fixture and both downloads shared SHA-256:
 09E5700A19B563CD1E7888A965BA7E6E02EE1A73C56B87061D00768A21419FBC
 ```
 
-This hash is historical evidence; temporary downloaded files are not published.
-
 ## Actual browser matrix
 
 | Requested | Measured content/document | Result |

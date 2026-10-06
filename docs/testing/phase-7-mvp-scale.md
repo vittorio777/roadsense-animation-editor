@@ -38,7 +38,7 @@ Original full suite: **71 files / 501 tests**, strict checking, build and diff p
 | Serialization and load preparation | 2.24 ms |
 | Focused four-test process | 938 ms |
 
-Operations completed inside the existing five-second test timeout. These describe that run rather than a production or cross-device performance guarantee.
+Operations completed inside the existing five-second test timeout.
 
 ## Browser workflow
 
@@ -51,10 +51,8 @@ Switch to full range, select the 31.58-second point, play to 31.81 and pause. Al
 - [Process preview at 31.81 seconds](../development/previews/f7.13/scale-project-31s.jpg)
 - [Accepted five-vehicle scene](../development/screenshots/f7.13/mvp-scale-five-vehicles.jpg)
 
-Progress and accepted evidence retain separate classifications.
-
 ## Result
 
 Scale automation, browser smoke and human acceptance passed. The successful build retained the existing 635.35 kB advisory.
 
-This gate did not complete the final user-workflow gate or create the MVP tag. Original commit message: `test: verify phase 7 mvp scale`.
+Original commit message: `test: verify phase 7 mvp scale`.

@@ -111,5 +111,3 @@ Each asset needs maintained metadata, calibration, visual acceptance and registr
 | Save anchors in each project | Duplicates static geometry and complicates asset updates |
 | Put stateful lamp control inside each SVG | Image-internal nodes are not the drawing API and mapping would be duplicated |
 | Branch by assetId in SceneViewport | Couples model knowledge to UI and requires code changes per asset |
-
-English edition of the accepted MVP decision. Future system designs are omitted; its problem, types, transform rules, errors and tradeoffs are retained.

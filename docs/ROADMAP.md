@@ -59,4 +59,4 @@ The final gates are distinct:
 
 Both must be accepted before the MVP is complete. The original final gate commit received the annotated v0.1-editor-mvp tag.
 
-See [all feature units](FEATURES.md), [their development records](development/INDEX.md) and [phase evidence](testing/INDEX.md). This edition retains the MVP plan and its actual refinements; later-stage plans are omitted.
+See [all feature units](FEATURES.md), [their development records](development/INDEX.md) and [phase evidence](testing/INDEX.md).

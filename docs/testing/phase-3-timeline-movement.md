@@ -4,7 +4,7 @@
 
 ## Baseline and checks
 
-Scope: F3.1–F3.11. In-app Chromium was the available browser, approved for this matrix. Earlier Chrome/Edge layout results belong to Phase 2 and are not new runs here.
+Scope: F3.1–F3.11. Browser verification used in-app Chromium.
 
 Original scene: 1600 × 900, one historical car-blue, 0–10-second timeline with 0.1-second snapping, empty paths and no state editing/playback. Tests passed **25 files / 124 tests**, strict checking and build. Ten preceding records/commits were complete; dependencies/design documents were unchanged.
 
@@ -40,6 +40,6 @@ The original accepted captures are:
 - [1920 × 1080](../development/screenshots/f3.11/chromium/movement-1920x1080.jpg)
 - [Fallback](../development/screenshots/f3.11/chromium/movement-1024x600-fallback.jpg)
 
-The screenshot interface cropped the taller captures: requested 1440 × 900 produced 1440 × 810; 1920 × 1080 produced 1920 × 953. Full viewport/document measurements and accessibility observations support layout results separately from those images.
+The screenshot interface cropped the taller captures: requested 1440 × 900 produced 1440 × 810; 1920 × 1080 produced 1920 × 953.
 
 Console had no warnings/errors. The successful build retained 571.45 kB advisory. Phase gate passed; original commit `test: verify phase 3 timeline and movement`, tag `phase-3-timeline-movement`.

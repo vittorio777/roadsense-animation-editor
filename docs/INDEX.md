@@ -20,7 +20,7 @@ The documents describe the accepted editor MVP and its development from foundati
 - [Historical testing records](testing/INDEX.md): all eight phase/scale/end-to-end reports.
 - [Current checks and public release evidence](TESTING.md): running the suite, CI and deployment observations.
 
-Phase 0 is represented by its foundation plan and feature inventory. The original accepted snapshot has no standalone F0.x feature records; none are fabricated here.
+Phase 0 is covered by the foundation plan and feature inventory.
 
 ## Design decisions
 
@@ -29,14 +29,8 @@ Phase 0 is represented by its foundation plan and feature inventory. The origina
 
 The [decision index](decisions/INDEX.md) records their introduction and related work.
 
-## Document edition and history
+## Development baseline
 
-This English edition uses the accepted Phase 7 development snapshot, private commit `97b18c80b4057f2cef4ff8645cb09921a0bc4fa7`, tagged `v0.1-editor-mvp`. Original project definitions, all existing MVP feature records, decisions and verification reports are represented.
+The development records cover the Phase 7 MVP, tagged `v0.1-editor-mvp`. Early features establish single-vehicle editing and a 10-second timeline; later phases add multiple vehicles and a 60-second range. F7.12 replaces the initial car-blue model with Sedan and Sport.
 
-Translation preserves numbered acceptance conditions, meaningful feature boundaries, design changes, implementation and recorded results. Repeated requirement/checklist narration is consolidated. Plans for capabilities outside this MVP are omitted.
-
-Early single-vehicle, 10-second or read-only feature boundaries explain the actual sequence. Historical car-blue references identify the original model used before F7.12 introduced Sedan/Sport. They are not renamed retroactively or described as current release assets.
-
-Historical test/browser results describe their original runs. Current installation, CI and deployment evidence is reported separately. Process previews and accepted captures retain their original classifications; capture/export limitations remain explicit.
-
-The public Git history began with the prepared release and does not reproduce private feature commits. Original commit messages/tags and occasional commit identifiers are provenance, not links to public commits. No historical development sequence or unavailable evidence is invented.
+Feature commit messages and phase tags refer to the development repository. The public repository starts with the MVP release.

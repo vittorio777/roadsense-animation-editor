@@ -27,7 +27,7 @@ Browser at zero enabled Left and three Booleans; at 5 it switched Right and disa
 | 1920 × 1080 | 1920 × 1032 content, no overflow | Passed |
 | 1024 × 600 | 1024 × 552 content; 1280 × 720 document | Passed |
 
-The browser reserved 48 px for its chrome at the larger/fallback sizes. Measurements use actual content rather than assuming requested outer height. Controls, internal scrolling and state data stayed usable; console had no runtime errors.
+The browser reserved 48 px for its chrome at the larger/fallback sizes. Measurements use browser content dimensions. Controls, internal scrolling and state data stayed usable; console had no runtime errors.
 
 ## Process captures
 

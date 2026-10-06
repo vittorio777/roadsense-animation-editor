@@ -1,16 +1,16 @@
 # Feature Development Records
 
-These records follow the complete existing Phase 1–7 MVP development sequence. Each feature records its requirement, scope, acceptance conditions, implementation, verification and human acceptance. Phase 0 has a foundation plan and feature inventory; the accepted snapshot has no separate F0.x development records.
+These records follow the complete existing Phase 1–7 MVP development sequence. Each feature records its requirement, scope, acceptance conditions, implementation, verification and human acceptance. Phase 0 is covered by the foundation plan and feature inventory.
 
-Read records in phase order or use the [feature breakdown](../FEATURES.md). Early capability limits describe sequencing inside this MVP, not limitations of the finished editor.
+Read records in phase order or use the [feature breakdown](../FEATURES.md). The phases build from the editor shell to integrated authoring and preview.
 
-Acceptance criteria retain original AC numbers. Repeated requirement/verification narration is consolidated while preserving conditions, meaningful design choices and recorded results. Test counts are historical feature-stage results. See the [process overview](../ENGINEERING_PROCESS.md) for the development workflow and [testing records](../testing/INDEX.md) for cross-feature gates.
+Each record includes numbered acceptance criteria and test results for that feature stage. See the [process overview](../ENGINEERING_PROCESS.md) for the development workflow and [testing records](../testing/INDEX.md) for cross-feature gates.
 
-## Record and evidence conventions
+## Reading the records
 
-A record was created when work began and updated through acceptance. Features used one final feature commit; phase tags were placed on the gate commit. Original commit messages identify that private sequence; the clean public release does not reproduce it.
+A record was created when work began and updated through acceptance. Each feature ended with a commit, and each phase gate received a tag. Commit messages in the tables refer to the development repository.
 
-Screenshots under screenshots/ are original accepted captures. Images under previews/ are progress evidence; they do not replace final human acceptance. Original unavailable captures and cropped/narrow browser panels are disclosed in their records. Available media retains its original bytes and classification.
+The screenshots/ directory contains accepted feature captures; previews/ contains images taken during implementation and verification. Each feature links its related images.
 
 ## Phase 1 — Editor shell
 

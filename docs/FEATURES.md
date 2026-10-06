@@ -14,7 +14,6 @@ The delivery plan was split into independently verifiable features. This invento
 - **F0.8 — Initial project validator:** Accept valid minimal data and reject obvious invalid projects.
 - **F0.9 — Foundation verification:** Run type checking, tests and build to complete the foundation gate.
 
-
 ## Phase 1 — Editor shell
 
 - **[F1.1 — Editor Layout](development/F1.1-editor-layout.md)**: Build the initial workspace with a toolbar, object library, scene, properties and timeline.
@@ -104,4 +103,4 @@ The delivery plan was split into independently verifiable features. This invento
 
 ## Final gates
 
-F7.12 supplies two independently calibrated production models. F7.13 verifies the specified scale without adding product features. F7.14 verifies the complete user workflow and final MVP release gate. Their records and the [testing index](testing/INDEX.md) preserve the distinction.
+F7.12 supplies two independently calibrated production models. F7.13 verifies the specified scale without adding product features. F7.14 verifies the complete user workflow and final MVP release gate.

@@ -29,6 +29,6 @@ All combinations passed layout, proportional centered scene and application runt
 
 ## Observations and gate
 
-The successful build reported 551.78 kB main JavaScript, above the default advisory. Chrome's local usage-statistics and external-extension-cache notices were unrelated to application resources/runtime. They did not invalidate the six checks.
+The successful build reported 551.78 kB main JavaScript, above the default advisory. Chrome's local usage-statistics and external-extension-cache notices were unrelated to application resources/runtime.
 
 Automated, browser and human acceptance passed. Original feature commit: `test: verify phase 1 editor shell`; annotated tag: `phase-1-editor-shell`.

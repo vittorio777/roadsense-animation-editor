@@ -1,8 +1,8 @@
 # RoadSense Animation Editor
 
-RoadSense Animation Editor lets you create vehicle animations for road-rule learning scenarios in your browser. I built it to make it easier to arrange where vehicles go, when they move and how their lights change, instead of adjusting animation files by hand.
+RoadSense Animation Editor is a browser-based tool for creating animated road scenes. You can place vehicles, arrange where they move and when their lights change, then preview the animation and save your work to continue later.
 
-You can create a scene, edit the animation, preview it and save your work to reopen later.
+I built it to help prepare scenarios for RoadSense NZ, my New Zealand road-rule learning project, and make scenes quicker to set up and revise. This is the current MVP demo, and I plan to continue developing the editor as that project grows.
 
 **[Open the editor](https://roadsense-animation-editor.vercel.app/)** — use a desktop browser with a mouse and keyboard.
 
@@ -46,7 +46,7 @@ The suite contains **504 tests across 72 files**, covering geometry, editing ope
 
 Phase checks verify how features work together. The scale gate checks five vehicles, 20 movement points per vehicle, 20 keyframes per state track and 60 seconds of animation. The final gate starts from an empty project and checks authoring, preview, save/load and recovery from invalid input.
 
-GitHub Actions runs type checking, tests and a production build on Linux and Windows. The static application is hosted on Vercel. [Testing](docs/TESTING.md) provides the commands and public-release results; the [historical verification records](docs/testing/INDEX.md) retain the original phase evidence and browser limits.
+GitHub Actions runs type checking, tests and a production build on Linux and Windows. The static application is hosted on Vercel. [Testing](docs/TESTING.md) provides the commands and public-release results; the [historical verification records](docs/testing/INDEX.md) describe phase workflows and results.
 
 ## Run locally
 
@@ -70,8 +70,6 @@ pnpm exec vite preview
 ## Documentation
 
 The [documentation index](docs/INDEX.md) connects the project brief, engineering rules, architecture, data contract, delivery plan, complete development records, decisions and verification reports.
-
-The documents cover the accepted MVP. Earlier feature boundaries remain as part of its development history; plans beyond this version are excluded.
 
 ## MVP scope
 

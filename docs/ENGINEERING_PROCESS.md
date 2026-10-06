@@ -20,14 +20,12 @@ State-duration editing led to [D001](decisions/D001-keyframe-backed-state-interv
 
 Review also refined interactions. Interval creation received a hold-and-movement guard; timeline hierarchy verification found and fixed a grid-layout issue. These changes and their acceptance results remain in the feature records.
 
-The records document constraints and review around AI-assisted development. They are not AI-session transcripts or a measurement of which tool wrote each line.
-
 ## Verify and accept
 
 Feature verification uses relevant model/store/UI tests and browser review where needed. Phase reports check combined behavior. The final scale and end-to-end gates separately verify the specified data size and complete user workflow.
 
-Human acceptance is recorded separately from automated success. Browser availability, requested versus measured dimensions and capture limitations are preserved in [testing records](testing/INDEX.md).
+Each feature records human acceptance alongside automated checks. The [testing records](testing/INDEX.md) describe browser workflows, environments and results.
 
 ## Public release
 
-The [documentation index](INDEX.md#document-edition-and-history) explains the English edition and original snapshot. [Current verification](TESTING.md) records fresh installation, public CI and hosted smoke checks separately from historical results.
+The [documentation index](INDEX.md) connects the project design and development records. [Release verification](TESTING.md) covers installation, GitHub Actions and the hosted application.

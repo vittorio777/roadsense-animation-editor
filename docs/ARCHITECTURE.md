@@ -118,5 +118,3 @@ src/
   main.tsx
 tests/
 ```
-
-English edition of the MVP architecture, retaining its module, state, coordinate, asset and persistence boundaries. The structure reflects the accepted implementation. Designs for separate later-stage systems are omitted.

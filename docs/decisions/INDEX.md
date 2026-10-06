@@ -7,4 +7,4 @@ Decisions record changes or choices with lasting effects on the MVP contract or 
 | [D001 — Keyframe-backed state intervals](D001-keyframe-backed-state-intervals.md) | 2026-09-30 | State properties, timeline hierarchy, interval creation/editing and shared selection |
 | [D002 — Vehicle model visual definitions](D002-vehicle-model-visual-definitions.md) | 2026-10-01 | Preview visual integration and independently calibrated Sedan/Sport models |
 
-These decisions were introduced during development, rather than being presented as requirements known from the first day.
+D001 arose during state-duration editing; D002 arose during preview integration.

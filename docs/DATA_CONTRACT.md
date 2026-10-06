@@ -207,7 +207,7 @@ Within an interval, t is in [0, 1] and feeds the cubic polynomial directly. The 
 
 This does not imply constant physical speed, easing or arc-length adjustment. Pure path functions reject invalid parameters rather than extrapolating.
 
-At an exact nonfinal point, preview uses its exact position and outgoing direction. At/after the final point it holds the final pose using the incoming end direction. A single-point vehicle holds that point with rotation zero. Undefined tangent direction produces an unresolved result rather than an invented heading.
+At an exact nonfinal point, preview uses its exact position and outgoing direction. At/after the final point it holds the final pose using the incoming end direction. A single-point vehicle holds that point with rotation zero. Undefined tangent direction produces an unresolved result.
 
 ## Movement mutations
 
@@ -280,5 +280,3 @@ Validation is read-only: it does not sort, fill defaults, strip unknown fields, 
 currentTime, object/point/path/keyframe selection, preview-playing state, zoom/scroll, hover, drag, collapse and feedback are temporary editor state. Never serialize the whole store.
 
 The actual model files express this contract rather than defining a competing format. Contract conflicts must be resolved and documented before implementation changes.
-
-English edition of the Phase 7 contract. The complete example and model semantics are retained; editor clarifications reflect the accepted MVP. Future object/platform plans are omitted.
