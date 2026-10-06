@@ -1,30 +1,33 @@
-# Engineering Process
+# Development Process
 
-## Acceptance before implementation
+I used AI assistance within a feature-by-feature development workflow. The project documents set the constraints for implementation, and each feature record carries its requirements through verification and acceptance.
 
-Development started with the animation data contract and module boundaries. Features then progressed through requirements, acceptance criteria, implementation, automated verification, browser review where appropriate, and acceptance before a feature commit.
+## Define the project
 
-The MVP joined scene editing, movement points, shared path geometry, state tracks, persistence, and preview into one complete workflow. Its final gate tested the combined behavior instead of treating individual feature completion as proof that the product worked end to end.
+The [project brief](PROJECT.md) describes the authoring problem, accepted workflow and scope. The [architecture](ARCHITECTURE.md) assigns module responsibilities; the [data contract](DATA_CONTRACT.md) defines saved data and invariants. The [engineering rules](ENGINEERING_RULES.md) make those constraints part of the work.
 
-## Engineering rules
+## Plan bounded features
 
-- Keep persistent animation data separate from temporary editor state.
-- Centralize data mutation rules so scene, properties, and timeline operations agree.
-- Prefer typed, deterministic functions for geometry, state resolution, and validation.
-- Use strict TypeScript settings; do not bypass data invariants with untyped values.
-- Validate input before changing a currently valid project.
-- Keep asset geometry separate from animation semantics.
-- Test behavior, data invariants, round trips, and interactions, with browser review for visual details.
-- Keep feature scope bounded; resolve contract conflicts explicitly before changing semantics.
+The [delivery plan](ROADMAP.md) establishes dependencies and phase gates. The [feature breakdown](FEATURES.md) divides those phases into independently verifiable units.
 
-## AI-assisted development
+A feature record was created when work began, with requirements and acceptance criteria before implementation. Its implementation summary and verification/acceptance results were added as work progressed. The [development index](development/INDEX.md) follows the entire existing MVP sequence.
 
-AI tools assisted with implementation and verification within documented feature boundaries. Requirements, acceptance criteria, data contracts, and human review guided that work. The public repository exposes the resulting source and tests so engineering claims can be inspected and reproduced.
+## Resolve design conflicts and review behavior
 
-Human acceptance remains distinct from automated checks. Browser availability limitations are recorded rather than presented as passing coverage. Internal prompts, process previews, and detailed task records are excluded from this public release; they are not required to run the product.
+The rules required a contract or architecture conflict to be explained and resolved before the affected implementation continued.
 
-## Release traceability
+State-duration editing led to [D001](decisions/D001-keyframe-backed-state-intervals.md), keeping intervals as views of keyframes. Preview integration led to [D002](decisions/D002-vehicle-model-visual-definitions.md), replacing proposed proportional lamp placement with explicit model geometry.
 
-The private development history used feature-level commits and annotated milestone tags. The accepted MVP snapshot is `97b18c80b4057f2cef4ff8645cb09921a0bc4fa7`, tagged `v0.1-editor-mvp`. Public preparation preserves its application source, CSS, tests, assets, and configuration, while curating English documentation and adding CI.
+Review also refined interactions. Interval creation received a hold-and-movement guard; timeline hierarchy verification found and fixed a grid-layout issue. These changes and their acceptance results remain in the feature records.
 
-A clean public initial release should state this provenance. It should not invent a sequence of historical development commits. Subsequent public work can retain its ordinary commit history.
+The records document constraints and review around AI-assisted development. They are not AI-session transcripts or a measurement of which tool wrote each line.
+
+## Verify and accept
+
+Feature verification uses relevant model/store/UI tests and browser review where needed. Phase reports check combined behavior. The final scale and end-to-end gates separately verify the specified data size and complete user workflow.
+
+Human acceptance is recorded separately from automated success. Browser availability, requested versus measured dimensions and capture limitations are preserved in [testing records](testing/INDEX.md).
+
+## Public release
+
+The [documentation index](INDEX.md#document-edition-and-history) explains the English edition and original snapshot. [Current verification](TESTING.md) records fresh installation, public CI and hosted smoke checks separately from historical results.

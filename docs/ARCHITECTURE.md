@@ -1,51 +1,122 @@
 # Architecture
 
-## Application boundary
+## Architectural goal
 
-The MVP is a standalone, browser-based vehicle-animation editor. It requires no backend, account service, database, or remote API. React provides the workspace UI; React Konva draws the editable scene; Zustand coordinates project data and temporary editor state.
+The editor creates and modifies animation data; preview interprets that data at a given time. Both share stable model definitions and path mathematics, while UI interactions stay separate from calculation.
 
-The workspace contains an object library, scene, properties panel, timeline, and project toolbar. All panels work on the same project and selection identity.
+The editor is a standalone project alongside the RoadSense practice website. It has no dependency on question text, answers or explanations, and does not require a backend or shared package.
 
-## Persistent data and temporary state
+## Editor modules
 
-`src/model/` defines the animation project. Vehicles reference registered assets and own movement points, Bezier paths, and state keyframes. This is the data saved to JSON.
+| Module | Responsibility |
+|---|---|
+| Editor shell | Compose toolbar, library, scene, properties and timeline; own page layout rather than animation math |
+| Object library | Present registered backgrounds and vehicles for use in a scene |
+| Scene editor | Spatial selection, dragging, movement-point positions and path/control editing in logical coordinates |
+| Properties | Precise editing of selected entities through shared store operations |
+| Timeline | Time navigation, point timing and state-duration authoring |
+| Editor store | Coordinate project mutations and cross-panel selection, time and playback |
 
-`src/store/editorStore.ts` also manages selection, current time, preview status, and editing operations. Only project data is serialized. Timeline scroll, track expansion, selection, and playback state do not become project fields.
+Changing time alone does not create animation data. A position or state edit creates or updates the corresponding point/keyframe through the shared operations.
 
-Editing operations maintain data invariants centrally. Scene and properties edits do not implement competing rules for inserting or deleting movement points. The timeline and properties panel update the same state tracks.
+Zustand holds the current AnimationProject and shared temporary editor state. Persistence saves only AnimationProject. Component-specific drafts, collapse state, interval handles, drag previews, zoom/scroll and feedback remain React local state.
 
-## Geometry and preview
+## Data model
 
-`src/path/bezier.ts` is the shared mathematical core. A path segment references adjacent movement points and contains two cubic Bezier control points. Position and direction are calculated from this geometry for both authoring and preview.
+The model defines project, scene, vehicles, movement points, paths and state tracks. It has no React, Konva, timeline-layout or clock dependency. The [data contract](DATA_CONTRACT.md) specifies format, meaning and invariants.
 
-`src/preview/sceneState.ts` combines the project, current time, path calculations, and state-track resolution into a preview representation. The scene displays the resolved position, rotation, and vehicle states.
+Mutation operations centralize business rules so scene, timeline and properties do not independently implement point insertion, topology or keyframe boundaries.
 
-`src/preview/usePreviewPlaybackClock.ts` advances editor time while preview is playing. Playback stops at 60 seconds. Seeking and playback do not change persistent animation data.
+## Path core
 
-This release has editor preview logic and shared vehicle drawing. It has no independent Engine, Renderer, or Player module.
+The pure path core resolves the same P0/P1/P2/P3 geometry for drawing, position and tangent direction. A path refers to adjacent movement-point IDs and stores two absolute control points. Moving endpoints does not translate controls.
 
-## Coordinate system
+Editor curves and preview movement therefore use the same mathematical definition. The core calculates geometry; store operations coordinate data changes.
 
-The default scene is 1600 x 900 logical units. Browser resizing changes display scaling, not saved coordinates. Pointer positions are translated back into scene coordinates before data is updated. Vehicle dragging respects the MVP's scene bounds.
+## Preview
 
-## State authoring
+composePreviewSceneState combines project data, time, shared path functions and the model's state resolver into ordered vehicle poses and states. It does not mutate the project or advance time.
 
-Indicator, brake-light, headlight, and horn tracks use discrete keyframes. The latest value at or before a time remains active until the next keyframe.
+The root playback clock advances shared currentTime using animation-frame timestamp differences. Seeking and pausing use the same time source; playback stops at the 60-second editor boundary. This working range is a UI/transport policy rather than a hidden upper limit in the saved format.
 
-Timeline intervals are projections of those keyframes. Creating, moving, resizing, or deleting an interval updates its keyframe boundaries. Left and right indicator lanes are views of one enum track; overlap represents hazard lights.
+Scene rendering consumes resolved poses; authoring overlays retain their original model coordinates. Preview availability and presentation adapters supply empty/error behavior without maintaining another project or saved error model.
 
-## Asset geometry
+## Persistence
 
-`src/assets/assetRegistry.ts` defines background and vehicle assets. Each vehicle definition includes native forward direction and lamp-anchor geometry. `VehicleVisual.tsx` binds the resolved vehicle state to that definition, avoiding per-model branches and guessed lamp positions.
+Persistence provides validation, canonical serialization, file reading/parsing, download and load preparation. It saves animation data rather than selection, playback, hover, panel layout or projected intervals.
 
-## Persistence boundary
+Loading reads and parses into unknown, validates the complete project, resolves registered assets, and returns a ready result. Only then does one store action replace the project and reset time/selection. Failure leaves current valid work intact.
 
-Loading follows parse -> validate and resolve references -> replace the project. Validation checks supported fields, IDs, timing, path topology, state values, and known assets. Failure displays a categorized message and preserves the existing project.
+The serializer reconstructs supported fields with canonical object ordering while preserving arrays and values. Round-trip checks compare independent source snapshots and second serialization.
 
-Saving produces a canonical representation of supported project fields. A successful load resets temporary editor state. Round-trip tests compare the persisted project before saving with the restored project.
+## Asset definitions and visual binding
 
-## Styling and delivery
+Assets live in public/assets/backgrounds and public/assets/vehicles. A static registry supplies identity, type, source, name and dimensions. Projects save assetId references only.
 
-Tailwind CSS and the baseline styles provide the desktop workspace and minimum-size scrolling fallback. Vite serves development modules and builds a static application. TypeScript strict checks include application code, tests, and Vite configuration.
+Every vehicle also has a typed visual definition with native forward direction, lamp anchors/radii and beam geometry. Three responsibilities remain distinct:
 
-The public release preserves the accepted MVP implementation. Documentation and continuous integration make its boundaries and checks easier to inspect.
+1. Animation data and composed preview state describe the instance's position, semantic direction and current states.
+2. Asset metadata describes body appearance, native direction and component locations.
+3. Generic visual binding applies resolved states to the resolved model without reading keyframes or branching on assetId.
+
+Model coordinates use a centered origin, positive X right and positive Y down. An inner −forwardDeg correction aligns the native asset; the outer group applies semantic rotation. Missing/invalid geometry fails explicitly rather than guessing from image dimensions. See [D002](decisions/D002-vehicle-model-visual-definitions.md).
+
+## Coordinates and styling
+
+The default scene is 1600 × 900 logical units. Uniform display scaling fits available space without changing stored coordinates. Spatial editing uses logical coordinates and shared full-vehicle bounds.
+
+Tailwind CSS and the layout contract provide a desktop workspace with a minimum-size scrolling fallback. Vite builds the static application; strict TypeScript checking covers code, tests and configuration.
+
+## Dependency rules
+
+- UI uses shared store actions rather than private animation formats.
+- Model and path calculation do not depend on UI components.
+- Preview composition uses the shared model/path/state logic.
+- Persistence uses the model, validator and asset resolver, and does not directly mutate the store.
+- Asset definitions do not depend on instance state, timeline or store.
+- Vehicle drawing consumes resolved state and asset geometry; the clock supplies time rather than calculating motion.
+
+If a feature cannot fit these boundaries, review its architecture or contract explicitly before adding cross-module coupling.
+
+## Project structure
+
+```text
+src/
+  editor/
+    components/
+      toolbar/
+      object-library/
+      scene/
+      properties/
+      timeline/
+    Editor.tsx
+  model/
+    animation.ts
+    scene.ts
+    vehicle.ts
+    movement.ts
+    path.ts
+    stateTrack.ts
+    stateIntervals.ts
+  store/editorStore.ts
+  path/bezier.ts
+  preview/
+    sceneState.ts
+    usePreviewPlaybackClock.ts
+    availability.ts
+  persistence/
+    projectValidator.ts
+    projectSerializer.ts
+    projectParser.ts
+    projectDownloader.ts
+    projectLoader.ts
+    projectLoadError.ts
+  assets/
+    assetRegistry.ts
+    projectAssetResolver.ts
+  App.tsx
+  main.tsx
+tests/
+```
+
+English edition of the MVP architecture, retaining its module, state, coordinate, asset and persistence boundaries. The structure reflects the accepted implementation. Designs for separate later-stage systems are omitted.

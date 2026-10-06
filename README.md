@@ -1,27 +1,56 @@
 # RoadSense Animation Editor
 
-A desktop-first editor for authoring 2D vehicle animations: place vehicles, shape their routes, arrange timed states, preview the result, and save an editable JSON project.
+RoadSense Animation Editor lets you create vehicle animations for road-rule learning scenarios in your browser. I built it to make it easier to arrange where vehicles go, when they move and how their lights change, instead of adjusting animation files by hand.
 
-Built with React, TypeScript, React Konva, Zustand, Tailwind CSS, and Vite. This portfolio release contains the completed editor MVP, with its original application code and automated tests.
+You can create a scene, edit the animation, preview it and save your work to reopen later.
 
-**[Open the live demo](https://roadsense-animation-editor.vercel.app/)** — best viewed in a desktop browser.
+**[Open the editor](https://roadsense-animation-editor.vercel.app/)** — use a desktop browser with a mouse and keyboard.
 
-![RoadSense MVP preview with five vehicles and an editable timeline](docs/media/public-mvp-preview.jpg)
+![The editor showing a road scene, vehicle settings and timeline](docs/media/public-mvp-preview.jpg)
 
-## What you can do
+## Using the editor
 
-- Choose an intersection background and add multiple Sedan or Sport vehicles.
-- Create movement points at different times and edit cubic Bezier routes using control points.
-- Arrange indicator, brake-light, headlight, and horn states on a vehicle timeline.
-- Keep selection synchronized across the scene, timeline, and properties panel.
-- Seek, play, and pause a preview within a 60-second editing range.
-- Download a JSON project and load it again, with validation and understandable error messages.
+Choose the intersection background and add a vehicle from the library. Select the vehicle, choose a time on the timeline and move it to where it should be at that moment. Repeat at other times to build its journey, then select a route and drag its handles to adjust the shape.
 
-Horn is a stored state; this version does not play sound.
+Use the timeline to arrange when the indicators, brake lights and headlights turn on and off. Click different times to check the scene, or press Play to watch the animation and Pause to inspect it.
+
+Save project downloads your work as a file. Use Load project to reopen it and continue editing. To explore an existing animation, download [the example project](examples/five-vehicle-demo.json) and load it into the editor. It contains three Sedans and two Sports over 60 seconds.
+
+## Implementation and design
+
+The application uses React and strict TypeScript, with React Konva for scene drawing, Zustand for shared editor state, Tailwind CSS for the workspace and Vite for builds.
+
+Several panels edit the same animation. I separated persistent project data from temporary editor state: movement, routes and state keyframes belong in the JSON project, while selection, playback and timeline layout do not. Shared mutation operations maintain the rules so scene, properties and timeline edits remain consistent.
+
+Route drawing and preview use the same cubic Bézier geometry. The curve the user edits is also the curve used to calculate position and tangent direction at a given time. Time maps directly to curve progress, so the preview follows authored timing without a constant-speed simulation.
+
+State intervals follow the same approach: the timeline derives them from keyframes and writes changes back to those boundaries. It does not maintain a second saved interval format. Each vehicle model declares its lamp geometry separately, allowing both models to use one visual binding.
+
+Loading is another explicit boundary. The editor checks the file structure, animation rules and asset references before replacing the current project. Failed input explains the problem and preserves the user's existing work.
+
+The [architecture](docs/ARCHITECTURE.md), [data contract](docs/DATA_CONTRACT.md) and [design decisions](docs/decisions/INDEX.md) describe these choices and their tradeoffs.
+
+## Development process and AI assistance
+
+I used AI assistance within a documented development workflow. Project scope, module responsibilities and data rules constrained the work. Each feature had requirements and acceptance criteria before implementation, followed by relevant tests, browser verification and human acceptance.
+
+The engineering rules limited work to the current feature and required contract or architecture conflicts to be resolved explicitly. Design decisions and review results record how those rules were applied and refined during the MVP.
+
+The [development records](docs/development/INDEX.md) follow the complete existing Phase 1–7 sequence, from the first workspace layout through final acceptance. They contain the requirements, numbered criteria, implementation and verification for each feature. The foundation plan, project rules and phase reports are included alongside them.
+
+Start with the [process overview](docs/ENGINEERING_PROCESS.md), or follow the [delivery plan](docs/ROADMAP.md) and [feature breakdown](docs/FEATURES.md) through the records.
+
+## Verification and delivery
+
+The suite contains **504 tests across 72 files**, covering geometry, editing operations, state resolution, interface interactions, persistence and integrated workflows.
+
+Phase checks verify how features work together. The scale gate checks five vehicles, 20 movement points per vehicle, 20 keyframes per state track and 60 seconds of animation. The final gate starts from an empty project and checks authoring, preview, save/load and recovery from invalid input.
+
+GitHub Actions runs type checking, tests and a production build on Linux and Windows. The static application is hosted on Vercel. [Testing](docs/TESTING.md) provides the commands and public-release results; the [historical verification records](docs/testing/INDEX.md) retain the original phase evidence and browser limits.
 
 ## Run locally
 
-Use Node.js 22.12 or newer on the Node 22 line, and pnpm 11.25.0. The release has been verified locally with Node.js 22.14.0. No API keys, database, or backend service are required.
+Use Node.js 22.12 or newer on the Node 22 line and pnpm 11.25.0.
 
 ```sh
 npm install --global pnpm@11.25.0
@@ -29,13 +58,7 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-Open the local URL printed by Vite. Use a desktop browser; the recommended workspace is at least 1280 x 720.
-
-For a quick demonstration, click **Load project** and select [the five-vehicle example](examples/five-vehicle-demo.json) from this checkout. Seek along the timeline, select a movement point or path, edit a control point, then save and reload the project.
-
-To start from scratch, select **Foundation Intersection**, add a vehicle, move the playhead, and change the vehicle position. Select a path to adjust its control points. Use the state lanes or properties to set lights, then preview and save.
-
-## Checks and production build
+Open the URL printed by Vite. A desktop workspace of at least 1280 × 720 is recommended.
 
 ```sh
 pnpm typecheck
@@ -44,59 +67,15 @@ pnpm build
 pnpm exec vite preview
 ```
 
-The baseline suite contains **72 test files and 504 tests**, covering path calculations, editing mutations, state tracks, persistence, UI interactions, and integrated MVP workflows. CI runs locked installation, type checking, tests, and a production build on Linux and Windows.
-
-See [Testing](docs/TESTING.md) for verification evidence and known advisories. The main production bundle currently exceeds Vite's default size advisory; this does not prevent a build.
-
-## Engineering highlights
-
-- **Persistent data and editor state are separate.** Project files contain animation data, not selections, playback state, or timeline layout.
-- **One geometry definition drives authoring and preview.** The shared path core computes position and tangent direction from the same Bezier curves shown in the editor.
-- **Timeline intervals are derived views.** State changes persist as keyframes; interval edits update those keyframes rather than maintaining a second data format.
-- **Vehicle appearance is data-driven.** Asset definitions describe native direction and lamp anchors, while common rendering code binds the current state to that geometry.
-- **Loading is validated before replacement.** Invalid input leaves the current valid project intact.
-
-## Project structure
-
-```text
-src/
-  assets/         Asset registry and reference resolution
-  editor/         Workspace, scene, properties, timeline, and toolbar
-  model/          Animation, scene, vehicle, movement, path, and state types
-  path/           Shared Bezier position and direction calculations
-  persistence/    Validation, parsing, serialization, loading, and download
-  preview/        Scene-state composition and playback clock
-  store/          Editor operations and temporary state
-tests/            Unit, interaction, integration, and acceptance tests
-examples/         Loadable demonstration project
-docs/             Architecture, contracts, decisions, and testing
-```
-
 ## Documentation
 
-- [Architecture](docs/ARCHITECTURE.md)
-- [Data contract](docs/DATA_CONTRACT.md)
-- [Testing and browser checklist](docs/TESTING.md)
-- [Engineering process and AI-assisted development](docs/ENGINEERING_PROCESS.md)
-- [Keyframe-backed state intervals](docs/decisions/001-keyframe-backed-state-intervals.md)
-- [Vehicle model visual definitions](docs/decisions/002-vehicle-model-visual-definitions.md)
+The [documentation index](docs/INDEX.md) connects the project brief, engineering rules, architecture, data contract, delivery plan, complete development records, decisions and verification reports.
 
-## Scope and limitations
+The documents cover the accepted MVP. Earlier feature boundaries remain as part of its development history; plans beyond this version are excluded.
 
-This version is a standalone vehicle-animation authoring tool. It supports the bundled background and two vehicle assets, local JSON persistence, and desktop mouse/keyboard interaction. It does not provide question authoring, traffic-rule validation, accounts, cloud storage, undo/redo history, or mobile editing.
+## MVP scope
 
-Preview is part of the editor. The public MVP does not include a separate animation-engine, renderer, or player package. Motion follows authored curves and timing rather than a physical traffic simulation. Time progress maps directly to the Bezier parameter, so speed is not constant along a curved path.
-
-## Release provenance
-
-Application code, CSS, tests, assets, dependency lockfile, and build configuration are taken from the accepted `v0.1-editor-mvp` snapshot:
-
-```text
-97b18c80b4057f2cef4ff8645cb09921a0bc4fa7
-test: complete animation editor mvp acceptance
-```
-
-The public documentation and CI have been prepared for this release. Internal development records and later-stage work are excluded.
+This version includes one intersection background, two vehicle models, desktop editing and project files saved locally. Horn state is editable and saved without audio output. Accounts, cloud storage, undo/redo and mobile editing are outside the MVP.
 
 ## Copyright
 
